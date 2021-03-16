@@ -1,5 +1,6 @@
 # Default ignored files
 baseAtual.xlsx
+../baseAtual.xlsx
 /shelf/
 /workspace.xml
 /bootstrap/
