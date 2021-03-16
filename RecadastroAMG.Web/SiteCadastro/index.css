@@ -1,0 +1,31 @@
+
+:root{
+    
+    --color-primary: #96b6c4;
+    --color-secondary: #54595F;
+    --color-text: #7A7A7A;
+    --color-accent: #61CE70;
+    --color-5c24ff4: #4054B2;
+    --color-6b948339: #23A455;
+    --color-1cb5b15e: #000;
+    --color-5e678a5: #FFF;
+}
+
+
+@media screen and (max-width: 641px) {
+    div.card > div:first-child{
+        text-align: center; 
+  }
+
+/* body{
+    background-color: var(--color-primary);
+} */
+
+/* 
+input{
+    border: var(--color-1cb5b15e);
+} */
+
+form{
+    margin-top: 1rem !important ; 
+} 
