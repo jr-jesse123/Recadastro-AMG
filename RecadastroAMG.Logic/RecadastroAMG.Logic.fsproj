@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <Compile Include="Configuration.fs" />
     <Compile Include="Program.fs" />
     <None Include="Prototypes\Prototype.fsx" />

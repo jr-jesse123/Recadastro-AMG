@@ -55,3 +55,4 @@ D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\ref\RecadastroAMG.Web.dll
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RecadastroAMG.Web.pdb
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RecadastroAMG.Web.genruntimeconfig.cache
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RecadastroAMG.Web.csproj.CopyComplete
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RecadastroAMG.Web.csprojAssemblyReference.cache

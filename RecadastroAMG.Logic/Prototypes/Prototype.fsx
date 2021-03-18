@@ -2,9 +2,17 @@
 #r "nuget:FSharp.Data"
 #r "nuget:Cpf"
 #r "nuget:CEPAberto"
+#r "nuget:FSharp.Data.JsonProvider"
 open FSharp.Data
 
 open System
+
+open FSharp.Data.JsonProvider
+
+module PrototypeConfiguration =
+    type Configurations = JsonProvider<"D:/repos/amg/RecadastroAMG.Logic/appsettings.json","Config">
+    let DefaultConfiguration =  Configurations.GetSample()
+    
 
 module Helpers =
     let ``Remover Caracteres especiais`` (texto:string) = 
@@ -28,9 +36,7 @@ module Domain =
                     Ok unvalidatedText 
                 else Error "Texto Precisa ser Menor do que 50 Caracteres"
 
-        
-
-        //TODO: qual nível de validação que queremos no e-mail? queremos testar para ver se o envio é válido? ou basta saber se tem arroba, tem ponto e etc...
+        //TODO: Validar e-mail enviando e-mail para o e-mail especificado.
         type private Email = string
         module Email =
             let Create (unvalidatedEmail:string) = 
@@ -39,11 +45,9 @@ module Domain =
                 | x when not <| x.Contains(".") -> Error "Email Invalido pois precisa conter ."
                 | _ -> Ok unvalidatedEmail
 
-
-        //TODO: DESCOBRIR SE CRMS PRECISAM SER VALIDADOS?
+        
         type CRM = int
 
-        
         type private AnoFormatura = int
         module AnoFormatura =
             let Create (anoInvalidado:int) = 
@@ -73,10 +77,7 @@ module Domain =
                 match unvalidatedData with
                 | ``Entre 02 e 120 anos`` unvalidatedData -> Ok unvalidatedData
                 | _ -> Error "data deve ser anterior à 2001 e posterior à 1901"
-
-
-
-         
+ 
         type private Telefone = string
         module Telefone =
             let Create (unvalidatedTelefone:string) =
@@ -97,16 +98,22 @@ module Domain =
                 | ``Celular com 8 digitos`` -> Ok <| ``Adicionar Nono Digitos`` (``Remover Caracteres especiais`` unvalidatedTelefone)
                 | ``Formato desconhecido`` -> Error "Formato desconhecido"
 
+
+        open CEPAberto
+        let DefaultCepValidator key cep = 
+            let cepClient = new CEPAbertoClient(key, true)
+            let result = cepClient.GetData cep
+            result.Success
+            
         type private CEP = string
         module CEP =
-            open CEPAberto
-            let Create unvalidatedCep =
+            let _Create validator unvalidatedCep =
                 let cep = ``Remover Caracteres especiais`` unvalidatedCep
-                let cepClient = new CEPAbertoClient("6853a9938993caad408c4eb25703c849", true)
-                let result = cepClient.GetData cep
-                if result.Success then Ok result.PostalCode else Error "Cep Invalido"
+                //let cepClient = new CEPAbertoClient("6853a9938993caad408c4eb25703c849", true)
+                //let result = cepClient.GetData cep
+                if validator unvalidatedCep then Ok cep else Error "Cep Invalido"
 
-
+        
         type Logradouro = String50
 
         type Estado = 
@@ -223,10 +230,15 @@ module Domain =
                                     }
         type RegistroAssociado = private 
                                     {
-                                        //TODO: verificar este camarada
-                                        //status:Status; 
                                         Id:int;
                                         PersonalInfo:PerrsonalInfo
                                         Contato:Contato
                                         Endereo:Endereco
                                     }
+        
+
+    type Reader<'env,'a> = Reader of action:('env -> 'a)
+    
+
+
+//não dar informações resulta em desligamento. resulta em desligamento.

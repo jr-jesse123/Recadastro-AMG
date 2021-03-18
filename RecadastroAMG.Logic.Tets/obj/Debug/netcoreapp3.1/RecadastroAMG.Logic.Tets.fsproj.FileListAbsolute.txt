@@ -117,3 +117,4 @@ d:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logi
 d:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logic.Tets.genruntimeconfig.cache
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\appsettings.json
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\JsonProvider.Runtime.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\RecadastroAMG.Logic.dll.config
