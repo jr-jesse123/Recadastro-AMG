@@ -1,16 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Configuration.fs"/>
-    <Compile Include="Program.fs"/>
-    <None Include="Prototypes\Prototype.fsx"/>
+    <Compile Include="Configuration.fs" />
+    <Compile Include="Program.fs" />
+    <None Include="Prototypes\Prototype.fsx" />
+    <None Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CEPAberto" Version="2.0.12"/>
-    <PackageReference Include="Cpf" Version="2.1.0"/>
-    <PackageReference Include="FSharp.Data.JsonProvider" Version="0.5.0"/>
+    <PackageReference Include="CEPAberto" Version="2.0.12" />
+    <PackageReference Include="Cpf" Version="2.1.0" />
+    <PackageReference Include="FSharp.Data.JsonProvider" Version="0.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>

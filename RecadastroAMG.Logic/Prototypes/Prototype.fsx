@@ -1,5 +1,4 @@
 ﻿
-#load @"D:\repos\amg\RecadastroAMG.Logic\Configuration.fs"
 #r "nuget:FSharp.Data"
 #r "nuget:Cpf"
 #r "nuget:CEPAberto"
@@ -7,6 +6,17 @@ open FSharp.Data
 
 open System
 
+module Helpers =
+    let ``Remover Caracteres especiais`` (texto:string) = 
+        let charArray = texto.ToCharArray() 
+                        |> Array.filter (fun letter -> Char.IsDigit letter) 
+                        |> List.ofArray
+                        |> List.fold (fun acumulador letra  ->  letra :: acumulador ) []
+                        |> List.rev
+                        |> List.toArray
+        new string(charArray)
+
+open Helpers
 module Domain =
     
     module Types = 
@@ -65,14 +75,7 @@ module Domain =
                 | _ -> Error "data deve ser anterior à 2001 e posterior à 1901"
 
 
-        let ``Remover Caracteres especiais`` (texto:string) = 
-            let charArray = texto.ToCharArray() 
-                            |> Array.filter (fun letter -> Char.IsDigit letter) 
-                            |> List.ofArray
-                            |> List.fold (fun acumulador letra  ->  letra :: acumulador ) []
-                            |> List.rev
-                            |> List.toArray
-            new string(charArray)
+
          
         type private Telefone = string
         module Telefone =
@@ -97,13 +100,15 @@ module Domain =
         type private CEP = string
         module CEP =
             open CEPAberto
-            let Create unvalidatedCep = 
+            let Create unvalidatedCep =
+                let cep = ``Remover Caracteres especiais`` unvalidatedCep
                 let cepClient = new CEPAbertoClient("6853a9938993caad408c4eb25703c849", true)
-                cepClient.GetData "71917000"
-                cepClient.GetData unvalidatedCep
+                let result = cepClient.GetData cep
+                if result.Success then Ok result.PostalCode else Error "Cep Invalido"
 
 
-        type Logradouro = string
+        type Logradouro = String50
+
         type Estado = 
         |AC = 1
         |AL = 2
@@ -134,64 +139,64 @@ module Domain =
         |TO = 27
     
         type Especialidade = 
-            |``Acupuntura`` = 1
-            |``Alergia e imunologia`` = 2
-            |``Anestesiologia`` = 3
-            |``Angiologia`` = 4
-            |``Cardiologia`` = 5
-            |``Cirurgia cardiovascular`` = 6
-            |``Cirurgia da mão`` = 7
-            |``Cirurgia de cabeça e pescoço`` = 8
-            |``Cirurgia do aparelho digestivo`` = 9
-            |``Cirurgia geral`` = 10
-            |``Cirurgia oncológica`` = 11
-            |``Cirurgia pediátrica`` = 12
-            |``Cirurgia plástica`` = 13
-            |``Cirurgia torácica`` = 14
-            |``Cirurgia vascular`` = 15
-            |``Clínica médica`` = 16
-            |``Coloproctologia`` = 17
-            |``Dermatologia`` = 18
-            |``Endocrinologia e metabologia`` = 19
-            |``Endoscopia`` = 20
-            |``Gastroenterologia`` = 21
-            |``Genética médica`` = 22
-            |``Geriatria`` = 23
-            |``Ginecologia e obstetrícia`` = 24
-            |``Hematologia e hemoterapia`` = 25
-            |``Homeopatia`` = 26
-            |``Infectologia`` = 27
-            |``Mastologia`` = 28
-            |``Medicina de emergência`` = 29
-            |``Medicina de família e comunidade`` = 30
-            |``Medicina do trabalho`` = 31
-            |``Medicina de tráfego`` = 32
-            |``Medicina esportiva`` = 33
-            |``Medicina física e reabilitação`` = 34
-            |``Medicina intensiva`` = 35
-            |``Medicina legal e perícia médica`` = 36
-            |``Medicina nuclear`` = 37
-            |``Medicina preventiva e social`` = 38
-            |``Nefrologia`` = 39
-            |``Neurocirurgia`` = 40
-            |``Neurologia`` = 41
-            |``Nutrologia`` = 42
-            |``Oftalmologia`` = 43
-            |``Oncologia clínica`` = 44
-            |``Ortopedia e traumatologia`` = 45
-            |``Otorrinolaringologia`` = 46
-            |``Patologia`` = 47
-            |``Patologia Clínica / Medicina Laboratorial`` = 48
-            |``Pediatria`` = 49
-            |``Pneumologia`` = 50
-            |``Psiquiatria`` = 51
-            |``Radiologia e diagnóstico por imagem`` = 52
-            |``Radioterapia`` = 53
-            |``Reumatologia`` = 54
-            |``Urologia`` = 55
+        |``Acupuntura`` = 1
+        |``Alergia e imunologia`` = 2
+        |``Anestesiologia`` = 3
+        |``Angiologia`` = 4
+        |``Cardiologia`` = 5
+        |``Cirurgia cardiovascular`` = 6
+        |``Cirurgia da mão`` = 7
+        |``Cirurgia de cabeça e pescoço`` = 8
+        |``Cirurgia do aparelho digestivo`` = 9
+        |``Cirurgia geral`` = 10
+        |``Cirurgia oncológica`` = 11
+        |``Cirurgia pediátrica`` = 12
+        |``Cirurgia plástica`` = 13
+        |``Cirurgia torácica`` = 14
+        |``Cirurgia vascular`` = 15
+        |``Clínica médica`` = 16
+        |``Coloproctologia`` = 17
+        |``Dermatologia`` = 18
+        |``Endocrinologia e metabologia`` = 19
+        |``Endoscopia`` = 20
+        |``Gastroenterologia`` = 21
+        |``Genética médica`` = 22
+        |``Geriatria`` = 23
+        |``Ginecologia e obstetrícia`` = 24
+        |``Hematologia e hemoterapia`` = 25
+        |``Homeopatia`` = 26
+        |``Infectologia`` = 27
+        |``Mastologia`` = 28
+        |``Medicina de emergência`` = 29
+        |``Medicina de família e comunidade`` = 30
+        |``Medicina do trabalho`` = 31
+        |``Medicina de tráfego`` = 32
+        |``Medicina esportiva`` = 33
+        |``Medicina física e reabilitação`` = 34
+        |``Medicina intensiva`` = 35
+        |``Medicina legal e perícia médica`` = 36
+        |``Medicina nuclear`` = 37
+        |``Medicina preventiva e social`` = 38
+        |``Nefrologia`` = 39
+        |``Neurocirurgia`` = 40
+        |``Neurologia`` = 41
+        |``Nutrologia`` = 42
+        |``Oftalmologia`` = 43
+        |``Oncologia clínica`` = 44
+        |``Ortopedia e traumatologia`` = 45
+        |``Otorrinolaringologia`` = 46
+        |``Patologia`` = 47
+        |``Patologia Clínica / Medicina Laboratorial`` = 48
+        |``Pediatria`` = 49
+        |``Pneumologia`` = 50
+        |``Psiquiatria`` = 51
+        |``Radiologia e diagnóstico por imagem`` = 52
+        |``Radioterapia`` = 53
+        |``Reumatologia`` = 54
+        |``Urologia`` = 55
 
 
-            //TODO: DEFINIR QUAIS OS CAMPOS SÃO OPCIONAIS AQUI DO ENDEREÇO E CONFIRMAR QUE SOMENTE UM ENDEREÇO É POSSÍVEL OU NECESSÁRIO
+        //TODO: DEFINIR QUAIS OS CAMPOS SÃO OPCIONAIS AQUI DO ENDEREÇO E CONFIRMAR QUE SOMENTE UM ENDEREÇO É POSSÍVEL OU NECESSÁRIO
         type Endereco = private {CEP:CEP;Logradouro:Logradouro;Numero:int option;Complemento:String50;Bairro:String50;Cidade:String50;Estado:Estado}
         //TODO: confirmar qual das opções abaixo é a mais adequada:
         //1 : nenhum telefone é requerido, um telefone de cada tipo é possível
@@ -201,8 +206,21 @@ module Domain =
 
 
         //verificar se o e-mail é requerido
-        type Contato = private {TelefoneFixo:TelefoneFixo;TelefoneMovel:TelefoneMovel;Email:Email}
-        type PerrsonalInfo = private {CRM:CRM;AnoFormatura:AnoFormatura;Especialidade:Especialidade;CPF:CPF;DataNascimento:DataNascimento;Sexo:Sexo}
+        type Contato = private {
+                                    TelefoneFixo:Telefone;
+                                    TelefoneMovel:Telefone;
+                                    Email:Email
+                                }
+
+        type PerrsonalInfo = private 
+                                    {
+                                        CRM:CRM;
+                                        AnoFormatura:AnoFormatura;
+                                        Especialidade:Especialidade;
+                                        CPF:CPF;
+                                        DataNascimento:DataNascimento;
+                                        Sexo:Sexo
+                                    }
         type RegistroAssociado = private 
                                     {
                                         //TODO: verificar este camarada
@@ -212,15 +230,3 @@ module Domain =
                                         Contato:Contato
                                         Endereo:Endereco
                                     }
-
-
-    
-module Dados =
-open Domain.Types
-    let teste = String50.Create "teste"
-    let teste2 = String50.Create "teste555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555"
-    //let teste:E = 
-    
-    //type DadosRaw = FSharp.Data.CsvProvider<"D:/repos/amg/associados.csv",";",0>
-    //let dados = DadosRaw.GetSample()
-    //Seq.length <| dados.Rows

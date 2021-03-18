@@ -4762,7 +4762,8 @@
       "CEPAberto >= 2.0.12",
       "Cpf >= 2.1.0",
       "FSharp.Core >= 5.0.0",
-      "FSharp.Data.JsonProvider >= 0.5.0"
+      "FSharp.Data.JsonProvider >= 0.5.0",
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -4822,6 +4823,11 @@
           "FSharp.Data.JsonProvider": {
             "target": "Package",
             "version": "[0.5.0, )",
+            "generatePathProperty": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )",
             "generatePathProperty": true
           }
         },

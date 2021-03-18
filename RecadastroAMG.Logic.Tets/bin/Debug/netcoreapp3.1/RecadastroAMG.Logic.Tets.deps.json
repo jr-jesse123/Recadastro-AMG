@@ -89,6 +89,18 @@
           }
         }
       },
+      "FSharp.Data.JsonProvider/0.5.0": {
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/JsonProvider.Runtime.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
@@ -1117,7 +1129,9 @@
         "dependencies": {
           "CEPAberto": "2.0.12",
           "Cpf": "2.1.0",
-          "FSharp.Core": "5.0.0"
+          "FSharp.Core": "5.0.0",
+          "FSharp.Data.JsonProvider": "0.5.0",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "RecadastroAMG.Logic.dll": {}
@@ -1158,6 +1172,13 @@
       "sha512": "sha512-iHoYXA0VaSQUONGENB1aVafjDDZDZpwu39MtaRCTrmwFW/cTcK0b2yKNVYneFHJMc3ChtsSoM9lNtJ1dYXkHfA==",
       "path": "fsharp.core/5.0.0",
       "hashPath": "fsharp.core.5.0.0.nupkg.sha512"
+    },
+    "FSharp.Data.JsonProvider/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9xidAKW86b5o0ACX1Jpo+gtaGJEa60JErmhuOL7s6/PrP3AYm2GH6D+tCJsF+nsfxDn6HnvvfqBsdUNg2b295g==",
+      "path": "fsharp.data.jsonprovider/0.5.0",
+      "hashPath": "fsharp.data.jsonprovider.0.5.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",
