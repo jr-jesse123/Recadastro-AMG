@@ -13,70 +13,70 @@ namespace RecadastroAMG.Web.Shared
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 1 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 2 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 3 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 4 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 5 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 6 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 7 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 8 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 9 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using RecadastroAMG.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+#line 10 "d:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using RecadastroAMG.Web.Shared;
 
 #line default
@@ -90,7 +90,7 @@ using RecadastroAMG.Web.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "D:\repos\amg\RecadastroAMG.Web\Shared\NavMenu.razor"
+#line 28 "d:\repos\amg\RecadastroAMG.Web\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

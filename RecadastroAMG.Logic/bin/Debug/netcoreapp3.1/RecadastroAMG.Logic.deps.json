@@ -8,419 +8,31 @@
     ".NETCoreApp,Version=v3.1": {
       "RecadastroAMG.Logic/1.0.0": {
         "dependencies": {
-          "CData.CSV": "20.0.7654",
-          "Dynamicweb.DataIntegration.Providers.CsvProvider": "3.0.0",
+          "CEPAberto": "2.0.12",
+          "Cpf": "2.1.0",
           "FSharp.Core": "5.0.0"
         },
         "runtime": {
           "RecadastroAMG.Logic.dll": {}
         }
       },
-      "ABCpdf/9.1.1.5": {
-        "runtime": {
-          "lib/net40/ABCpdf.dll": {
-            "assemblyVersion": "9.1.1.5",
-            "fileVersion": "9.1.1.5"
-          }
-        }
-      },
-      "CData.CSV/20.0.7654": {
-        "runtime": {
-          "lib/netstandard2.0/System.Data.CData.CSV.dll": {
-            "assemblyVersion": "20.0.0.40",
-            "fileVersion": "20.0.7654.0"
-          }
-        }
-      },
-      "CsvHelper/22.1.2": {
+      "CEPAberto/2.0.12": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0"
+          "Microsoft.AspNet.WebApi.Client": "5.2.7",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
-          "lib/netstandard2.1/CsvHelper.dll": {
-            "assemblyVersion": "22.0.0.0",
-            "fileVersion": "22.1.2.0"
+          "lib/net48/CEPAberto.dll": {
+            "assemblyVersion": "2.0.12.0",
+            "fileVersion": "2.0.12.0"
           }
         }
       },
-      "Dynamicweb/9.4.49": {
-        "dependencies": {
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Core.UI": "1.2.0",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.DataProcessing": "1.0.8",
-          "Dynamicweb.Diagnostics": "3.0.0",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Hosting": "1.0.2",
-          "Dynamicweb.Imaging": "2.3.10",
-          "Dynamicweb.Indexing": "1.3.1",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Mailing": "2.1.0",
-          "Dynamicweb.Scheduling": "1.1.12",
-          "Dynamicweb.Security": "5.2.2",
-          "Dynamicweb.SmartSearch": "1.1.2",
-          "Dynamicweb.UI.Elements": "2.2.5",
-          "Newtonsoft.Json": "8.0.3",
-          "RazorEngine": "3.4.1",
-          "SharpZipLib": "0.86.0"
-        },
+      "Cpf/2.1.0": {
         "runtime": {
-          "lib/net46/Dynamicweb.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.4.49.0"
-          }
-        }
-      },
-      "Dynamicweb.Analytics/1.0.10": {
-        "dependencies": {
-          "Dynamicweb": "9.4.49",
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Scheduling": "1.1.12",
-          "Dynamicweb.Security": "5.2.2",
-          "Dynamicweb.SmartSearch": "1.1.2"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Analytics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.10.0"
-          }
-        }
-      },
-      "Dynamicweb.Caching/2.1.0": {
-        "dependencies": {
-          "Dynamicweb.Extensibility": "3.2.4"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Caching.dll": {
-            "assemblyVersion": "1.0.0.0",
+          "lib/Cpf.dll": {
+            "assemblyVersion": "2.1.0.0",
             "fileVersion": "2.1.0.0"
-          }
-        }
-      },
-      "Dynamicweb.Configuration/2.0.6": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Extensibility": "3.2.4"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Configuration.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.0.6.0"
-          }
-        }
-      },
-      "Dynamicweb.Core/2.3.1": {
-        "dependencies": {
-          "Newtonsoft.Json": "8.0.3"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Core.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "2.3.1.0"
-          }
-        }
-      },
-      "Dynamicweb.Core.UI/1.2.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "8.0.3"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Core.UI.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "Dynamicweb.Data/1.4.1": {
-        "dependencies": {
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Diagnostics": "3.0.0",
-          "Dynamicweb.Logging": "4.1.4"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Data.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.4.1.0"
-          }
-        }
-      },
-      "Dynamicweb.DataIntegration/2.0.3": {
-        "dependencies": {
-          "Dynamicweb": "9.4.49",
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Ecommerce": "1.4.84",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Scheduling": "1.1.12",
-          "Dynamicweb.Security": "5.2.2"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.DataIntegration.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.0.3.0"
-          }
-        }
-      },
-      "Dynamicweb.DataIntegration.Providers.CsvProvider/3.0.0": {
-        "dependencies": {
-          "CsvHelper": "22.1.2",
-          "Dynamicweb": "9.4.49",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.DataIntegration": "2.0.3",
-          "Dynamicweb.Ecommerce": "1.4.84",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Logging": "4.1.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
-        "runtime": {
-          "lib/net472/Dynamicweb.DataIntegration.Providers.CsvProvider.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        }
-      },
-      "Dynamicweb.DataProcessing/1.0.8": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Security": "5.2.2"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.DataProcessing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.8.0"
-          }
-        }
-      },
-      "Dynamicweb.Diagnostics/3.0.0": {
-        "dependencies": {
-          "Dynamicweb.Logging": "4.1.4"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Diagnostics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        }
-      },
-      "Dynamicweb.Ecommerce/1.4.84": {
-        "dependencies": {
-          "ABCpdf": "9.1.1.5",
-          "Dynamicweb": "9.4.49",
-          "Dynamicweb.Analytics": "1.0.10",
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Core.UI": "1.2.0",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Diagnostics": "3.0.0",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Hosting": "1.0.2",
-          "Dynamicweb.Indexing": "1.3.1",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Mailing": "2.1.0",
-          "Dynamicweb.Scheduling": "1.1.12",
-          "Dynamicweb.Security": "5.2.2",
-          "Dynamicweb.SmartSearch": "1.1.2",
-          "Dynamicweb.UserManagement": "1.2.20",
-          "Newtonsoft.Json": "8.0.3"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Ecommerce.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.4.84.0"
-          }
-        }
-      },
-      "Dynamicweb.Environment/3.1.1": {
-        "dependencies": {
-          "Dynamicweb.Configuration": "2.0.6"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Environment.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "3.1.1.0"
-          }
-        }
-      },
-      "Dynamicweb.Extensibility/3.2.4": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Core.UI": "1.2.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Extensibility.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "3.2.4.0"
-          }
-        }
-      },
-      "Dynamicweb.Hosting/1.0.2": {
-        "dependencies": {
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Security": "5.2.2",
-          "Microsoft.Web.Administration": "7.0.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Hosting.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.2.0"
-          }
-        }
-      },
-      "Dynamicweb.Imaging/2.3.10": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "MetadataExtractor": "2.0.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Imaging.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.3.10.0"
-          },
-          "lib/net46/ImageGlue.dll": {
-            "assemblyVersion": "7.3.0.2",
-            "fileVersion": "7.3.0.2"
-          }
-        }
-      },
-      "Dynamicweb.Indexing/1.3.1": {
-        "dependencies": {
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Diagnostics": "3.0.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Indexing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.3.1.0"
-          }
-        }
-      },
-      "Dynamicweb.Logging/4.1.4": {
-        "dependencies": {
-          "Dynamicweb.Extensibility": "3.2.4",
-          "NLog": "4.2.1"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Logging.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.1.4.0"
-          }
-        }
-      },
-      "Dynamicweb.Mailing/2.1.0": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Logging": "4.1.4",
-          "HtmlAgilityPack": "1.4.9.5"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Mailing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        }
-      },
-      "Dynamicweb.Scheduling/1.1.12": {
-        "dependencies": {
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Hosting": "1.0.2",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Mailing": "2.1.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Scheduling.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.1.12.0"
-          },
-          "lib/net46/Microsoft.Win32.TaskScheduler.dll": {
-            "assemblyVersion": "1.5.3943.25226",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Dynamicweb.Security/5.2.2": {
-        "dependencies": {
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Configuration": "2.0.6",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Core.UI": "1.2.0",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Diagnostics": "3.0.0",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Indexing": "1.3.1",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Mailing": "2.1.0",
-          "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Newtonsoft.Json": "8.0.3",
-          "Owin": "1.0.0"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.Security.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "5.2.2.0"
-          }
-        }
-      },
-      "Dynamicweb.SmartSearch/1.1.2": {
-        "dependencies": {
-          "Dynamicweb.Caching": "2.1.0",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Dynamicweb.Indexing": "1.3.1",
-          "Dynamicweb.Security": "5.2.2"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.SmartSearch.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.1.2.0"
-          }
-        }
-      },
-      "Dynamicweb.UI.Elements/2.2.5": {
-        "dependencies": {
-          "Dynamicweb.Core.UI": "1.2.0",
-          "Dynamicweb.Extensibility": "3.2.4",
-          "Newtonsoft.Json": "8.0.3"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.UI.Elements.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.2.5.0"
-          }
-        }
-      },
-      "Dynamicweb.UserManagement/1.2.20": {
-        "dependencies": {
-          "Dynamicweb": "9.4.49",
-          "Dynamicweb.Core": "2.3.1",
-          "Dynamicweb.Data": "1.4.1",
-          "Dynamicweb.Environment": "3.1.1",
-          "Dynamicweb.Logging": "4.1.4",
-          "Dynamicweb.Security": "5.2.2"
-        },
-        "runtime": {
-          "lib/net46/Dynamicweb.UserManagement.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.2.20.0"
           }
         }
       },
@@ -473,54 +85,20 @@
           }
         }
       },
-      "HtmlAgilityPack/1.4.9.5": {
-        "runtime": {
-          "lib/Net45/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.4.9.5",
-            "fileVersion": "1.4.9.5"
-          }
-        }
-      },
-      "MetadataExtractor/2.0.0": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "System.Text.Encoding.CodePages": "4.3.0",
-          "XmpCore": "5.1.3"
+          "Newtonsoft.Json": "12.0.3",
+          "Newtonsoft.Json.Bson": "1.0.1"
         },
         "runtime": {
-          "lib/netstandard1.3/MetadataExtractor.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         }
       },
-      "Microsoft.AspNet.Razor/3.0.0": {
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
-          }
-        }
-      },
-      "Microsoft.AspNet.WebApi.Client/5.2.3": {
-        "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.30128.0"
-          }
-        }
-      },
-      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Web.Administration/7.0.0": {
-        "runtime": {
-          "lib/net20/Microsoft.Web.Administration.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "6.1.7601.17514"
-          }
-        }
-      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -576,38 +154,23 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.3.19514"
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
           }
         }
       },
-      "NLog/4.2.1": {
-        "runtime": {
-          "lib/net45/NLog.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.1251.0"
-          }
-        }
-      },
-      "Owin/1.0.0": {
-        "runtime": {
-          "lib/net40/Owin.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "RazorEngine/3.4.1": {
+      "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.0.0"
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
-          "lib/net45/RazorEngine.dll": {
-            "assemblyVersion": "3.4.1.0",
-            "fileVersion": "3.4.1.0"
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.20722"
           }
         }
       },
@@ -659,14 +222,6 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "SharpZipLib/0.86.0": {
-        "runtime": {
-          "lib/20/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "0.86.0.518",
-            "fileVersion": "0.86.0.518"
-          }
-        }
-      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -902,7 +457,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Numerics.Vectors/4.5.0": {},
       "System.ObjectModel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -981,7 +535,6 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.3": {},
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1155,22 +708,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encoding.CodePages/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0"
-        }
-      },
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1245,17 +782,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "XmpCore/5.1.3": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.0/XmpCore.dll": {
-            "assemblyVersion": "5.1.3.0",
-            "fileVersion": "5.1.3.0"
-          }
-        }
       }
     }
   },
@@ -1265,194 +791,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ABCpdf/9.1.1.5": {
+    "CEPAberto/2.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OR0EgL9A8+6luEyC3iYQole862BvZQN+E/uN7RNivK/oLLYxLCHdBQGOdatlXANoezcfijsU2ShJRJ7Th617YA==",
-      "path": "abcpdf/9.1.1.5",
-      "hashPath": "abcpdf.9.1.1.5.nupkg.sha512"
+      "sha512": "sha512-HyoBxFyitek1LR0nY/IyN0iGiXiLzmhI+rhLRU3xV1UceWC/koe9+LBmeCBVK21nrBnF1r4m6R5zvHzAiujU+Q==",
+      "path": "cepaberto/2.0.12",
+      "hashPath": "cepaberto.2.0.12.nupkg.sha512"
     },
-    "CData.CSV/20.0.7654": {
+    "Cpf/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oHp5JTjEJ+z9UYsCPz1WyZ72za43EsXLnblnyC+T8KpgPKVDwfoZ3m7QO+jJG/Cj8TfBEMoa5yjjvj9fMMKK8A==",
-      "path": "cdata.csv/20.0.7654",
-      "hashPath": "cdata.csv.20.0.7654.nupkg.sha512"
-    },
-    "CsvHelper/22.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VF4iFdkW4D1HJUFXKVD5VIw7KQBpq+7TXhNpkIOgqhDC2hUK5oDQlIeGZ0p1/ks98Wl8bJY7vxIRK3nvqFS4kw==",
-      "path": "csvhelper/22.1.2",
-      "hashPath": "csvhelper.22.1.2.nupkg.sha512"
-    },
-    "Dynamicweb/9.4.49": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1Z/F97LBw1dCMM8smeKO5qg4M8uSTbekhfX3f3LRmjzk+V6i30VG0MbAg3axVjnpr5dApmoGmyGsgqsIw4aCag==",
-      "path": "dynamicweb/9.4.49",
-      "hashPath": "dynamicweb.9.4.49.nupkg.sha512"
-    },
-    "Dynamicweb.Analytics/1.0.10": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IWzw6XgsFmX9HFHELzHYLRT43n14MS27mPOxPLQan6KFdg1tMkRkGO/jBcivMZTcRGdcb4qSFFabF/IZgnfRBA==",
-      "path": "dynamicweb.analytics/1.0.10",
-      "hashPath": "dynamicweb.analytics.1.0.10.nupkg.sha512"
-    },
-    "Dynamicweb.Caching/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aMXFf0peSIUIB6qLe/qldg0qQRAit7ShT9+oaRULm1iSJWhIVEl8GJMgQfFnYR+GKVFAeZZTMZMrX0qRkVkFuA==",
-      "path": "dynamicweb.caching/2.1.0",
-      "hashPath": "dynamicweb.caching.2.1.0.nupkg.sha512"
-    },
-    "Dynamicweb.Configuration/2.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jHk7cOUpqCUyasVXtSJSAzWqP9dTDElEo4VDbKRCMHvqxsliA9CPubefvxeXiYoCFAxj0LIwnc0RcwMw5ulVpg==",
-      "path": "dynamicweb.configuration/2.0.6",
-      "hashPath": "dynamicweb.configuration.2.0.6.nupkg.sha512"
-    },
-    "Dynamicweb.Core/2.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NXFetT++krXIsriIbevEhoLtUJa651vr4iL3D7eaX7Esherm5c6J/lmAwNHxxzzP8MzpNixTKLh4t/poXP2iCA==",
-      "path": "dynamicweb.core/2.3.1",
-      "hashPath": "dynamicweb.core.2.3.1.nupkg.sha512"
-    },
-    "Dynamicweb.Core.UI/1.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UTMJ+nXuc26Y0HpCA9+e3pX+zT39gQGsZ+l6OIXoaQDl27SV75ow8yd+6Qn8gZTJSRPgxGoZW1gv0ljXDgwW1A==",
-      "path": "dynamicweb.core.ui/1.2.0",
-      "hashPath": "dynamicweb.core.ui.1.2.0.nupkg.sha512"
-    },
-    "Dynamicweb.Data/1.4.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6G6DqWi7BAqFRZhu9wmDNQ3+82ToOYyjTWrVNPX3RYME7mLiED5Qi8qeON+8H99X4DnrYorpqWNqZj5FXh0aIA==",
-      "path": "dynamicweb.data/1.4.1",
-      "hashPath": "dynamicweb.data.1.4.1.nupkg.sha512"
-    },
-    "Dynamicweb.DataIntegration/2.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-8KBb8TZ1oOfqcaKEIWFOTCPZv/CSmcWlxb8n2FIahlUCeUenr/6Q775fJYbHColU8wOL9VJJVbTxMPRkGGV7Kw==",
-      "path": "dynamicweb.dataintegration/2.0.3",
-      "hashPath": "dynamicweb.dataintegration.2.0.3.nupkg.sha512"
-    },
-    "Dynamicweb.DataIntegration.Providers.CsvProvider/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7nWe3+UmzYrf1L03vZrJJStVaK6DBY/Z0PA+P6zfRECKnXhxKGmoCaxEHNX08WtGI94OLSOTkr+sSoC2um93BQ==",
-      "path": "dynamicweb.dataintegration.providers.csvprovider/3.0.0",
-      "hashPath": "dynamicweb.dataintegration.providers.csvprovider.3.0.0.nupkg.sha512"
-    },
-    "Dynamicweb.DataProcessing/1.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-isc84EDYLLiRXIWNHC7S6H7PGFFuJyRPzWG5jNRIr1lNpq+RWjsONGbEzvigyFMwvWnkyQQ2esbiORc31jMQDQ==",
-      "path": "dynamicweb.dataprocessing/1.0.8",
-      "hashPath": "dynamicweb.dataprocessing.1.0.8.nupkg.sha512"
-    },
-    "Dynamicweb.Diagnostics/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/Ap2s8h/6JfmYbw3tAXwBBAMLzDo6SVNMON+G1Aai5FCuUlADSF5X0sVcWrEC1Hw7mADO+ooTQoiOnjac5UmQA==",
-      "path": "dynamicweb.diagnostics/3.0.0",
-      "hashPath": "dynamicweb.diagnostics.3.0.0.nupkg.sha512"
-    },
-    "Dynamicweb.Ecommerce/1.4.84": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0Cm/Yfs7xphwgTCZASrQrLEGOnrBr8jwaGsONtmyjEZnMDRcxnpJa0bEzBHdDP3/tvKjjs3i2uA3U1mJftN4cw==",
-      "path": "dynamicweb.ecommerce/1.4.84",
-      "hashPath": "dynamicweb.ecommerce.1.4.84.nupkg.sha512"
-    },
-    "Dynamicweb.Environment/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pX8e/1+cQxbbsMDlvSuw5/Avf0FccNmePkT/1qyKmdEgC7xpveRAqMH1sQYIY8+mBkG5Urc4Godlwnde4gWxpQ==",
-      "path": "dynamicweb.environment/3.1.1",
-      "hashPath": "dynamicweb.environment.3.1.1.nupkg.sha512"
-    },
-    "Dynamicweb.Extensibility/3.2.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HEDj61jNkf4MlRRM5v6FSK/isF2mepIXEajRKylbpCXTEjukgmEtLHGlNp3OXfbOBEN+e3M8uWqaqmksCvmSWg==",
-      "path": "dynamicweb.extensibility/3.2.4",
-      "hashPath": "dynamicweb.extensibility.3.2.4.nupkg.sha512"
-    },
-    "Dynamicweb.Hosting/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lfjipw12slihsqIqDbGghQJL48QlgIk7NEncb37rMTOIlHt+tm9wZiZn9J06oKWySiRIoxFpGwANUSMpEgU08w==",
-      "path": "dynamicweb.hosting/1.0.2",
-      "hashPath": "dynamicweb.hosting.1.0.2.nupkg.sha512"
-    },
-    "Dynamicweb.Imaging/2.3.10": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ERK2L5iBHb3SeC0hsfbhykI+c9UI0ojtJuLXAgYItl9p/GC4+RgBjdlVKAqFMBTZGMOD6tNv0BXO98GwNF2x+A==",
-      "path": "dynamicweb.imaging/2.3.10",
-      "hashPath": "dynamicweb.imaging.2.3.10.nupkg.sha512"
-    },
-    "Dynamicweb.Indexing/1.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5qCCsZs3LPSbNUK3pFFe0PP6UN/SMe65n4ILS/bpuc18rvKELh3snG2AmipodnYLZibrI7eqbV/pwa0wYn+qlA==",
-      "path": "dynamicweb.indexing/1.3.1",
-      "hashPath": "dynamicweb.indexing.1.3.1.nupkg.sha512"
-    },
-    "Dynamicweb.Logging/4.1.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KVOUEmdlscz8u923c1vw8UyW5BDe89/hUTaprxm38q3TLeu7v2YJxhNZNl9mQmICqJ9iiowT7TZeVQGlt8M9NA==",
-      "path": "dynamicweb.logging/4.1.4",
-      "hashPath": "dynamicweb.logging.4.1.4.nupkg.sha512"
-    },
-    "Dynamicweb.Mailing/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hyq5IAen0vQqUBY7tppG4fRoC4sbLuXXLQRbjCyx+DSVpGRa9fa/5snXT7umXNqG7XpCJGfJBJr9pyLbogL4CA==",
-      "path": "dynamicweb.mailing/2.1.0",
-      "hashPath": "dynamicweb.mailing.2.1.0.nupkg.sha512"
-    },
-    "Dynamicweb.Scheduling/1.1.12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DXGeIsN0L/eVJ4V6vGxwMLj8DtS/i1ZP1veJMw8KCKNhTQsGF8wSTXwuO+Nqub/FZDXp5jMktvu+FAwTG/3QKA==",
-      "path": "dynamicweb.scheduling/1.1.12",
-      "hashPath": "dynamicweb.scheduling.1.1.12.nupkg.sha512"
-    },
-    "Dynamicweb.Security/5.2.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GL8n6EriXVRkftXm372JBQg3MlKSQqRBrawZ426CQJNFNn7BOnqZrun8GPzuxxDH5pPnZ9rGLAJs2Cd8W+xCaw==",
-      "path": "dynamicweb.security/5.2.2",
-      "hashPath": "dynamicweb.security.5.2.2.nupkg.sha512"
-    },
-    "Dynamicweb.SmartSearch/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JHQpN0FO0yVVtFR2gk8ZNDiE3vTdLqLQHlrrgZ6w3PkXJddCES9U3zp7RQZZ5v5oVJOXItrUFP+PzL4JYk0o3g==",
-      "path": "dynamicweb.smartsearch/1.1.2",
-      "hashPath": "dynamicweb.smartsearch.1.1.2.nupkg.sha512"
-    },
-    "Dynamicweb.UI.Elements/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-8h8o27l6eFdCgiUO68ttxttl1xQYBD9peZ0DKd3ktk0Dm3JHyGS95f+khxBhtDjprbpca8nbPK/5Bbcr8tKCeA==",
-      "path": "dynamicweb.ui.elements/2.2.5",
-      "hashPath": "dynamicweb.ui.elements.2.2.5.nupkg.sha512"
-    },
-    "Dynamicweb.UserManagement/1.2.20": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tMYis+ctYWGTzky+km22YAge2mXizaVSGz1aRpm7NnPJ6yjmlbL3pRwCjSvZyd7OIxQkDFupMnAMO2QfFH0OrA==",
-      "path": "dynamicweb.usermanagement/1.2.20",
-      "hashPath": "dynamicweb.usermanagement.1.2.20.nupkg.sha512"
+      "sha512": "sha512-pj7tW8tNCEYXHqBKbDXR0MPwIeB3TrF0PWX7p2o9RRugNMeP7ZzcX0LO9BmuWNS5sSjN5dK6NJDiL8wnRAZ5Iw==",
+      "path": "cpf/2.1.0",
+      "hashPath": "cpf.2.1.0.nupkg.sha512"
     },
     "FSharp.Core/5.0.0": {
       "type": "package",
@@ -1461,40 +812,12 @@
       "path": "fsharp.core/5.0.0",
       "hashPath": "fsharp.core.5.0.0.nupkg.sha512"
     },
-    "HtmlAgilityPack/1.4.9.5": {
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zk7zsIaPkyBvYoVDsnx52SbKtvcmo2bcgNBshhSG++RnHMYoh0dqxRuQSznY+w6luiqR35OiHTk1L73SUAGKLw==",
-      "path": "htmlagilitypack/1.4.9.5",
-      "hashPath": "htmlagilitypack.1.4.9.5.nupkg.sha512"
-    },
-    "MetadataExtractor/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ofovqEP5/SL8R5idOm3MbFlmmjrLFaiHye2L/VIWDA6YbPjpGE1RiTvQ29jYYDCJzfbvZ7a5VEsD+cJkcXZ3ug==",
-      "path": "metadataextractor/2.0.0",
-      "hashPath": "metadataextractor.2.0.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Razor/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
-      "path": "microsoft.aspnet.razor/3.0.0",
-      "hashPath": "microsoft.aspnet.razor.3.0.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebApi.Client/5.2.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
-      "path": "microsoft.aspnet.webapi.client/5.2.3",
-      "hashPath": "microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512"
-    },
-    "Microsoft.CSharp/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1510,13 +833,6 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Web.Administration/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-EuvWscCjs8RtM3sjHCwGHOe9DFrnTa59dywEG3dy0IhoaWklJgSEmGuTtwIlww97xAVdrt4XUdE7BgMgwl59+g==",
-      "path": "microsoft.web.administration/7.0.0",
-      "hashPath": "microsoft.web.administration.7.0.0.nupkg.sha512"
-    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1531,33 +847,19 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/8.0.3": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
-      "path": "newtonsoft.json/8.0.3",
-      "hashPath": "newtonsoft.json.8.0.3.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
-    "NLog/4.2.1": {
+    "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hh/KOxuD0e2BbdMJQQ2h53D/Lvwq4ALJHTUxmrzlcCTiwXGuJ5rUAaz1z8G1Ri6U4BaJHcUVgZeJqQFjViS+YQ==",
-      "path": "nlog/4.2.1",
-      "hashPath": "nlog.4.2.1.nupkg.sha512"
-    },
-    "Owin/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
-      "path": "owin/1.0.0",
-      "hashPath": "owin.1.0.0.nupkg.sha512"
-    },
-    "RazorEngine/3.4.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9e/X1RPpru2ipBXE5K90XFLyeB29hWMS0hU73WoTx1T3+JhxU6RgViJqLx76roPZPNVWOVp6qGUclsP30TjFWw==",
-      "path": "razorengine/3.4.1",
-      "hashPath": "razorengine.3.4.1.nupkg.sha512"
+      "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -1670,13 +972,6 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
-    },
-    "SharpZipLib/0.86.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
-      "path": "sharpziplib/0.86.0",
-      "hashPath": "sharpziplib.0.86.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -1832,13 +1127,6 @@
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
     },
-    "System.Numerics.Vectors/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "path": "system.numerics.vectors/4.5.0",
-      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
-    },
     "System.ObjectModel/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1908,13 +1196,6 @@
       "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.3",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
@@ -2007,13 +1288,6 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IRiEFUa5b/Gs5Egg8oqBVoywhtOeaO2KOx3j0RfcYY/raxqBuEK7NXRDgOwtYM8qbi+7S4RPXUbNt+ZxyY0/NQ==",
-      "path": "system.text.encoding.codepages/4.3.0",
-      "hashPath": "system.text.encoding.codepages.4.3.0.nupkg.sha512"
-    },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2069,13 +1343,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "XmpCore/5.1.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3aRaFXkM9Fp0iflYzmN6/knLXpyFJNQ2KROscwHQOVM0AWVJOESwNPrNI2piMdD8zQHqPgyb0AHQuiPLMC0mIw==",
-      "path": "xmpcore/5.1.3",
-      "hashPath": "xmpcore.5.1.3.nupkg.sha512"
     }
   }
 }
