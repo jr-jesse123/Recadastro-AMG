@@ -6,7 +6,7 @@ open Xunit.Abstractions
 
 type CepAbertoTests (outputHelper:ITestOutputHelper) =
 
-    // [<Fact>]
+    [<Fact>]
     let ``Cep é  corretamente validado`` () =
         let cepClient = new CEPAbertoClient("6853a9938993caad408c4eb25703c849", true)
         let result = cepClient.GetData "71917000"
@@ -15,7 +15,7 @@ type CepAbertoTests (outputHelper:ITestOutputHelper) =
         Assert.Equal("Avenida Flamboyant",result.Street)
         Assert.True result.Success
 
-    // [<Fact>]
+    [<Fact>]
     let ``Cep é corretamente invalidado`` () =
           let cepClient = new CEPAbertoClient("6853a9938993caad408c4eb25703c849", true)
           let result = cepClient.GetData "7191000" //n�emro propositalmente errado

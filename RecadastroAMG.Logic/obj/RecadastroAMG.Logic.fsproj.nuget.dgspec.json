@@ -54,9 +54,24 @@
               "version": "[5.0.0, )",
               "generatePathProperty": true
             },
+            "FSharp.Data": {
+              "target": "Package",
+              "version": "[4.0.1, )",
+              "generatePathProperty": true
+            },
             "FSharp.Data.JsonProvider": {
               "target": "Package",
               "version": "[0.5.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )",
               "generatePathProperty": true
             },
             "Newtonsoft.Json": {

@@ -12,35 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1728739581,
+        "HashCode": 750897421,
         "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Pages.Index",
+        "Name": "RecadastroAMG.Web.Pages.Counter",
         "AssemblyName": "RecadastroAMG.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Pages.Index"
+          "Common.TypeName": "RecadastroAMG.Web.Pages.Counter"
         }
       },
       {
-        "HashCode": 496605584,
+        "HashCode": -1923794176,
         "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Pages.Index",
+        "Name": "RecadastroAMG.Web.Pages.Counter",
         "AssemblyName": "RecadastroAMG.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "RecadastroAMG.Web.Pages.Index"
+            "TagName": "RecadastroAMG.Web.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Pages.Index",
+          "Common.TypeName": "RecadastroAMG.Web.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -78,35 +78,35 @@
         }
       },
       {
-        "HashCode": 750897421,
+        "HashCode": -1728739581,
         "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Pages.Counter",
+        "Name": "RecadastroAMG.Web.Pages.Index",
         "AssemblyName": "RecadastroAMG.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Pages.Counter"
+          "Common.TypeName": "RecadastroAMG.Web.Pages.Index"
         }
       },
       {
-        "HashCode": -1923794176,
+        "HashCode": 496605584,
         "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Pages.Counter",
+        "Name": "RecadastroAMG.Web.Pages.Index",
         "AssemblyName": "RecadastroAMG.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "RecadastroAMG.Web.Pages.Counter"
+            "TagName": "RecadastroAMG.Web.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Pages.Counter",
+          "Common.TypeName": "RecadastroAMG.Web.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -140,6 +140,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "RecadastroAMG.Web.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -193211484,
+        "Kind": "Components.Component",
+        "Name": "RecadastroAMG.Web.Shared.SurveyPrompt",
+        "AssemblyName": "RecadastroAMG.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RecadastroAMG.Web.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -1322871241,
+        "Kind": "Components.Component",
+        "Name": "RecadastroAMG.Web.Shared.SurveyPrompt",
+        "AssemblyName": "RecadastroAMG.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RecadastroAMG.Web.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RecadastroAMG.Web.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -269,59 +322,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "RecadastroAMG.Web.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -193211484,
-        "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Shared.SurveyPrompt",
-        "AssemblyName": "RecadastroAMG.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -1322871241,
-        "Kind": "Components.Component",
-        "Name": "RecadastroAMG.Web.Shared.SurveyPrompt",
-        "AssemblyName": "RecadastroAMG.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RecadastroAMG.Web.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RecadastroAMG.Web.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
