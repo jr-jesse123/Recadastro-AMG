@@ -2,10 +2,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>5064221f-eed6-4e58-816b-47f76881d3c9</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <Compile Include="Configuration.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Validators.fs" />
     <Compile Include="Program.fs" />
     <None Include="Prototypes\Prototype.fsx" />
     <None Include="appsettings.json">
@@ -15,7 +17,10 @@
   <ItemGroup>
     <PackageReference Include="CEPAberto" Version="2.0.12" />
     <PackageReference Include="Cpf" Version="2.1.0" />
+    <PackageReference Include="FSharp.Data" Version="4.0.1" />
     <PackageReference Include="FSharp.Data.JsonProvider" Version="0.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
