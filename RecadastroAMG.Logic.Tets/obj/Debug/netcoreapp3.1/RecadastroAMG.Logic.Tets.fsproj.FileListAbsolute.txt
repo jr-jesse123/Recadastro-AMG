@@ -1,6 +1,4 @@
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\testhost.dll
-D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\appsettings.json
-D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\RecadastroAMG.Logic.exe
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\testhost.exe
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
@@ -145,9 +143,6 @@ D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\runtimes\win\lib\n
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
-D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\RecadastroAMG.Logic.dll
-D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\netcoreapp3.1\RecadastroAMG.Logic.pdb
-D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logic.Tets.fsprojAssemblyReference.cache
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logic.Tets.AssemblyInfoInputs.cache
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logic.Tets.AssemblyInfo.fs
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\netcoreapp3.1\RecadastroAMG.Logic.Tets.fsproj.CopyComplete

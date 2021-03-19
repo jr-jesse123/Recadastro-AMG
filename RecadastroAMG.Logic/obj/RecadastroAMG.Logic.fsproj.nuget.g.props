@@ -16,11 +16,11 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\3.1.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\3.1.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\newtonsoft.json\12.0.3</PkgNewtonsoft_Json>
-    <PkgMicrosoft_Extensions_Configuration_UserSecrets Condition=" '$(PkgMicrosoft_Extensions_Configuration_UserSecrets)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\microsoft.extensions.configuration.usersecrets\3.1.0</PkgMicrosoft_Extensions_Configuration_UserSecrets>
+    <PkgMicrosoft_Extensions_DependencyInjection_Abstractions Condition=" '$(PkgMicrosoft_Extensions_DependencyInjection_Abstractions)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0</PkgMicrosoft_Extensions_DependencyInjection_Abstractions>
     <PkgMicrosoft_Extensions_Hosting Condition=" '$(PkgMicrosoft_Extensions_Hosting)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\microsoft.extensions.hosting\5.0.0</PkgMicrosoft_Extensions_Hosting>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
     <PkgFSharp_Data_JsonProvider Condition=" '$(PkgFSharp_Data_JsonProvider)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\fsharp.data.jsonprovider\0.5.0</PkgFSharp_Data_JsonProvider>

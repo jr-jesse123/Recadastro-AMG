@@ -1,19 +1,10 @@
-﻿#r "nuget:FSharp.Data"
+﻿#r "nuget:System.Runtime"
+#r "nuget:FSharp.Data.JsonProvider"
 #r "nuget:Cpf"
 #r "nuget:CEPAberto"
 #r "nuget:FSharp.Data.JsonProvider"
-open FSharp.Data
-open System
-open FSharp.Data.JsonProvider
-
-module PrototypeConfiguration =
-    type Configurations = JsonProvider<"D:/repos/amg/RecadastroAMG.Logic/appsettings.json","Config">
-    let DefaultConfiguration =  Configurations.GetSample()
-    
+#r "nuget:FSharp.Data"
+#load @"D:\repos\amg\RecadastroAMG.Logic\references.fsx"
 
 
-    //type Reader<'env,'a> = Reader of action:('env -> 'a)
-    
 
-
-//não dar informações resulta em desligamento. resulta em desligamento.

@@ -87,9 +87,6 @@ type Estado =
   
 namespace Domain
 open System
-open Config
-open Configuration
-open CEPAberto
 
 type RegistroAssociadoLegado = FSharp.Data.CsvProvider<"D:/repos/amg/associados.csv",";",0>
 type private String50 = string
@@ -102,6 +99,7 @@ type Sexo = |Masculino |Feminino
 type private CPF = string
 type private CEP = string
 type Logradouro = String50
+
 type Endereco = private {
                                 CEP:CEP;
                                 Logradouro:Logradouro;

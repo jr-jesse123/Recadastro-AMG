@@ -1,3 +1,5 @@
+using c = System.Func<int>;
+using Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RecadastroAMG.Web.Data;
+using Config;
+using Microsoft.FSharp.Core;
 
 namespace RecadastroAMG.Web
 {
@@ -20,20 +24,51 @@ namespace RecadastroAMG.Web
             Configuration = configuration;
         }
 
+        
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<Func<int>>(() => 1);
+            //services.AddTransient<Config.CepValidator>(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string,bool>((str) => true)));
+            //services.AddTransient(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string, bool>((str) => true)));
+
+            services.AddDefaultValidators();
+            //services.Add<CepValidator>(null);
+
+            services.AddTransient<CepValidator>(sp => CepValidator.NewCepValidator(FuncConvert.FromFunc<string, bool>((x) => false))); ;
+
+ 
+            var change = Microsoft.FSharp.Core.FuncConvert.FromFunc<string, string>((str) => "foda-se");
+
+            var teste = Domain.Iteste4.NewVish(change);
+
+            var teste2 = Domain.Iteste3.NewVish("");
+
+
+            //aqui nós podemos registar uma classe ou uma função com as depencencias resolvidas.
+            //d e forma que ao ser solicitada a função base ela seja entre  resolvida.\\\\\\
+            //services.AddSingleton<>
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func,CepValidator validador)
         {
+            var x = func.Invoke();
+
+            var y = validador;
+
+            var z = validador.Item.Invoke("");
+            
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

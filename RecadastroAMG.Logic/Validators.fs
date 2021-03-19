@@ -1,4 +1,4 @@
-﻿namespace Domainn
+﻿namespace Domain
 open System
 
 
@@ -12,8 +12,8 @@ module Helpers =
                         |> List.rev
                         |> List.toArray
         new string(charArray)
-    
 
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module String50 =
     let Create (unvalidatedText:string) = 
         if unvalidatedText.Length <= 50 then
@@ -21,18 +21,14 @@ module String50 =
         else Error "Texto Precisa ser Menor do que 50 Caracteres"
 
   //TODO: Validar e-mail enviando e-mail para o e-mail especificado.
-  
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  
 module Email =
     let Create (unvalidatedEmail:string) = 
         match unvalidatedEmail with
         | x when not <| x.Contains("@") -> Error "Email Precisa Conter @"
         | x when not <| x.Contains(".") -> Error "Email Invalido pois precisa conter ."
         | _ -> Ok unvalidatedEmail
-
-  
-  
-
-  
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module AnoFormatura =
     let Create (anoInvalidado:int) = 
         let anoEhValido ano = 
@@ -40,17 +36,14 @@ module AnoFormatura =
         match anoInvalidado with
         | ano when ano  |> anoEhValido -> Ok anoInvalidado
         | _ -> Error "Ano deve estar dentrod a última década"
-  
-  
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  
 module CPF =
       let Create unvalidatedCPF =
           match CpfLibrary.Cpf.Check unvalidatedCPF with
           |true -> Ok unvalidatedCPF
           |false -> Error $"O cpf {unvalidatedCPF} é inválido" 
-  
-  
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  
 module DataNascimento =
-      
     let Create unvalidatedData =
         let (|``Entre 02 e 120 anos``|_|) (data:DateTime) = 
             let yearspan = (DateTime.Now.Year - data.Year)
@@ -60,7 +53,7 @@ module DataNascimento =
         | ``Entre 02 e 120 anos`` unvalidatedData -> Ok unvalidatedData
         | _ -> Error "data deve ser anterior à 2001 e posterior à 1901"
  
-  
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  
 module Telefone =
     let Create (unvalidatedTelefone:string) =
         let ``Adicionar Nono Digitos`` (telefoneSemCaracteresEspeciais:string) = 
@@ -82,13 +75,13 @@ module Telefone =
 
 
 open CEPAberto    
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module CEP =
     let DefaultCepValidator key cep = 
-        let cepClient = new CEPAbertoClient(key, true)
+        let cepClient = CEPAbertoClient(key, true)
         let result = cepClient.GetData cep
         result.Success
-
-
+        
     let _Create validator unvalidatedCep =
         let cep = ``Remover Caracteres especiais`` unvalidatedCep          
         if validator unvalidatedCep then Ok cep else Error "Cep Invalido"

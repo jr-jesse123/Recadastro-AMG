@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Validators.fs" />
+    <Compile Include="Library.fs" />
+    <Compile Include="Configuration.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CEPAberto" Version="2.0.12" />
+    <PackageReference Include="Cpf" Version="2.1.0" />
+    <PackageReference Include="FSharp.Data" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

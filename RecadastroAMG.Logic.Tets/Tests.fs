@@ -25,7 +25,7 @@ type CepAbertoTests (outputHelper:ITestOutputHelper) =
 type JsonProviderTests (outputHelper:ITestOutputHelper) =
     [<Fact>]
     let ``Configuração padrão é lida corretamente`` () =
-        let teste  =  Config.Configuration.DefaultConfiguration
-        outputHelper.WriteLine teste.CepAbertoKey
+        //let teste  =  Config.Configuration.DefaultConfiguration
+        //outputHelper.WriteLine teste.CepAbertoKey
         ()
     

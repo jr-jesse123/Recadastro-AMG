@@ -1,0 +1,7 @@
+D:\repos\amg\FsharpTest\bin\Debug\net5.0\FsharpTest.deps.json
+D:\repos\amg\FsharpTest\bin\Debug\net5.0\FsharpTest.dll
+D:\repos\amg\FsharpTest\bin\Debug\net5.0\FsharpTest.pdb
+D:\repos\amg\FsharpTest\obj\Debug\net5.0\FsharpTest.AssemblyInfoInputs.cache
+D:\repos\amg\FsharpTest\obj\Debug\net5.0\FsharpTest.AssemblyInfo.fs
+D:\repos\amg\FsharpTest\obj\Debug\net5.0\FsharpTest.dll
+D:\repos\amg\FsharpTest\obj\Debug\net5.0\FsharpTest.pdb

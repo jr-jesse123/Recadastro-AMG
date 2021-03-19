@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{5EE9DA99-4DB5-4CAD-A5B6-3FD7D908A459}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecadastroAMG.Logic.Tets", "RecadastroAMG.Logic.Tets\RecadastroAMG.Logic.Tets.fsproj", "{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RecadastroAMG.Logic.Tets", "RecadastroAMG.Logic.Tets\RecadastroAMG.Logic.Tets.fsproj", "{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
