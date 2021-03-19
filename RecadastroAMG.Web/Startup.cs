@@ -1,19 +1,13 @@
-using c = System.Func<int>;
 using Config;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RecadastroAMG.Web.Data;
-using Config;
 using Microsoft.FSharp.Core;
+using  Domain;
 
 namespace RecadastroAMG.Web
 {
@@ -40,17 +34,22 @@ namespace RecadastroAMG.Web
             //services.AddTransient<Config.CepValidator>(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string,bool>((str) => true)));
             //services.AddTransient(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string, bool>((str) => true)));
 
-            services.AddDefaultValidators();
+            services.AddDefaultValidators("");
             //services.Add<CepValidator>(null);
 
-            services.AddTransient<CepValidator>(sp => CepValidator.NewCepValidator(FuncConvert.FromFunc<string, bool>((x) => false))); ;
+            services.AddTransient<CEPModule.CepValidatorNet>(sp => CEPModule.CepValidatorNet.NewCepValidator(FuncConvert.FromFunc<string, bool>((x) => false))); ;
 
  
-            var change = Microsoft.FSharp.Core.FuncConvert.FromFunc<string, string>((str) => "foda-se");
 
-            var teste = Domain.Iteste4.NewVish(change);
 
-            var teste2 = Domain.Iteste3.NewVish("");
+
+
+
+            //var change = Microsoft.FSharp.Core.FuncConvert.FromFunc<string, string>((str) => "foda-se");
+
+            //var teste = Domain.Iteste4.NewVish(change);
+
+            //var teste2 = Domain.Iteste3.NewVish("");
 
 
             //aqui nós podemos registar uma classe ou uma função com as depencencias resolvidas.
@@ -59,7 +58,7 @@ namespace RecadastroAMG.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func,CepValidator validador)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func, CEPModule.CepValidatorNet validador)
         {
             var x = func.Invoke();
 

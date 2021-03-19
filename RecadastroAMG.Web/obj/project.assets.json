@@ -225,7 +225,7 @@
           "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -1759,23 +1759,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "FsharpTest/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "CEPAberto": "2.0.12",
-          "Cpf": "2.1.0",
-          "FSharp.Core": "5.0.0",
-          "FSharp.Data": "4.0.1",
-          "Microsoft.Extensions.DependencyInjection": "5.0.1"
-        },
-        "compile": {
-          "bin/placeholder/FsharpTest.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FsharpTest.dll": {}
-        }
-      },
       "RecadastroAMG.Logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2079,10 +2062,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.1": {
-      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "sha512": "Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2097,7 +2080,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -5958,11 +5941,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "FsharpTest/1.0.0": {
-      "type": "project",
-      "path": "../FsharpTest/FsharpTest.fsproj",
-      "msbuildProject": "../FsharpTest/FsharpTest.fsproj"
-    },
     "RecadastroAMG.Logic/1.0.0": {
       "type": "project",
       "path": "../RecadastroAMG.Logic/RecadastroAMG.Logic.fsproj",
@@ -5971,7 +5949,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "FsharpTest >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 5.0.0",
       "RecadastroAMG.Logic >= 1.0.0"
     ]
@@ -6008,9 +5985,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\repos\\amg\\FsharpTest\\FsharpTest.fsproj": {
-              "projectPath": "D:\\repos\\amg\\FsharpTest\\FsharpTest.fsproj"
-            },
             "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj": {
               "projectPath": "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj"
             }

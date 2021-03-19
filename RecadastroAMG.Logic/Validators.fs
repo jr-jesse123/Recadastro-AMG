@@ -77,14 +77,23 @@ module Telefone =
 open CEPAberto    
 [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module CEP =
-    let DefaultCepValidator key cep = 
-        let cepClient = CEPAbertoClient(key, true)
-        let result = cepClient.GetData cep
-        result.Success
-        
-    let _Create validator unvalidatedCep =
+    type Unvalidatedcep = string
+    //type CepValidator = Unvalidatedcep -> bool
+
+    type CepValidatorNet = CepValidator of ( Unvalidatedcep -> bool)
+
+    let DefaultCepValidator key :CepValidatorNet = 
+        CepValidator
+            (fun str -> 
+                let cepClient = CEPAbertoClient(key, true)
+                let result = cepClient.GetData str
+                result.Success)
+    
+    //TODO: PENSAR EM COMO DOCUMENTAR E AUTO REGISTRAR NO DI AS FUNÇÕES QUE PRECISARÃO DE DEPENDENCIAS
+    let _Create (validator:CepValidatorNet) unvalidatedCep =
         let cep = ``Remover Caracteres especiais`` unvalidatedCep          
-        if validator unvalidatedCep then Ok cep else Error "Cep Invalido"
+        let (CepValidator wer) = validator
+        if  wer unvalidatedCep then Ok cep else Error "Cep Invalido"
 
 
 
