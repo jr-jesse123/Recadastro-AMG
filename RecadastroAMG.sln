@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{5EE9DA99
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RecadastroAMG.Logic.Tets", "RecadastroAMG.Logic.Tets\RecadastroAMG.Logic.Tets.fsproj", "{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecadastroAMG.Logic2", "RecadastroAMG.Logic2\RecadastroAMG.Logic2.fsproj", "{18BA95D9-34C0-4821-AC22-33DC939B73D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,18 @@ Global
 		{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}.Release|x64.Build.0 = Release|Any CPU
 		{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}.Release|x86.ActiveCfg = Release|Any CPU
 		{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}.Release|x86.Build.0 = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|x64.Build.0 = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Debug|x86.Build.0 = Debug|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|x64.ActiveCfg = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|x64.Build.0 = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{18BA95D9-34C0-4821-AC22-33DC939B73D1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

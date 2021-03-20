@@ -1,9 +1,9 @@
+D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.AssemblyInfoInputs.cache
+D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.AssemblyInfo.fs
+D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.fsprojAssemblyReference.cache
 D:\repos\amg\RecadastroAMG.Logic\bin\Debug\net5.0\appsettings.json
 D:\repos\amg\RecadastroAMG.Logic\bin\Debug\net5.0\RecadastroAMG.Logic.deps.json
 D:\repos\amg\RecadastroAMG.Logic\bin\Debug\net5.0\RecadastroAMG.Logic.dll
 D:\repos\amg\RecadastroAMG.Logic\bin\Debug\net5.0\RecadastroAMG.Logic.pdb
-D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.fsprojAssemblyReference.cache
-D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.AssemblyInfoInputs.cache
-D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.AssemblyInfo.fs
 D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.dll
 D:\repos\amg\RecadastroAMG.Logic\obj\Debug\net5.0\RecadastroAMG.Logic.pdb

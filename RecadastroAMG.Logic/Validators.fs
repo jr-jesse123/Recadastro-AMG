@@ -2,6 +2,7 @@
 open System
 
 
+
 [<AutoOpen>]
 module Helpers =
     let ``Remover Caracteres especiais`` (texto:string) = 
@@ -13,12 +14,30 @@ module Helpers =
                         |> List.toArray
         new string(charArray)
 
+
 [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module String50 =
     let Create (unvalidatedText:string) = 
         if unvalidatedText.Length <= 50 then
-            Ok unvalidatedText 
+            Ok (unvalidatedText:String50)
         else Error "Texto Precisa ser Menor do que 50 Caracteres"
+
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+module Nome =
+    let Create (unvalidatedName:string) =
+       
+        let (|``Nome Simples``|``Nome curto``|``Nome válido``|) (candidatoNome:string) =
+            match candidatoNome with
+            |nome when nome.Split().Length <= 1 -> ``Nome Simples``
+            |nome when nome.Length <= 5 -> ``Nome curto``
+            | _ -> ``Nome válido``
+
+
+        match unvalidatedName with
+        | ``Nome válido`` -> Ok (unvalidatedName:Nome)
+        |``Nome curto`` -> Error "Nome muito curto"
+        | ``Nome Simples`` -> Error "Nome e sobrenome são necessários"
+
 
   //TODO: Validar e-mail enviando e-mail para o e-mail especificado.
 [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  

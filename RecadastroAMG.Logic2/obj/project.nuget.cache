@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LHszozin9KIh9SsxDI6G4IWgpOzz4y7rFAHBP56p6chF12zflddnN4gIA3YHOufR8T7NBxPcl2uWz94O2KVaTw==",
+  "success": true,
+  "projectFilePath": "D:\\repos\\amg\\RecadastroAMG.Logic2\\RecadastroAMG.Logic2.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

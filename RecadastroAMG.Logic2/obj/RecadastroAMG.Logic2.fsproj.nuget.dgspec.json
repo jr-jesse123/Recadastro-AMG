@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\repos\\amg\\RecadastroAMG.Logic2\\RecadastroAMG.Logic2.fsproj": {}
+  },
+  "projects": {
+    "D:\\repos\\amg\\RecadastroAMG.Logic2\\RecadastroAMG.Logic2.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\amg\\RecadastroAMG.Logic2\\RecadastroAMG.Logic2.fsproj",
+        "projectName": "RecadastroAMG.Logic2",
+        "projectPath": "D:\\repos\\amg\\RecadastroAMG.Logic2\\RecadastroAMG.Logic2.fsproj",
+        "packagesPath": "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\amg\\RecadastroAMG.Logic2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JESSE JUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

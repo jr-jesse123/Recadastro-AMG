@@ -182,7 +182,6 @@
 #r @"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.dll"
 #r @"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\WindowsBase.dll"
 #r @"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\netstandard.dll"
-#load @"d:\repos\amg\RecadastroAMG.Logic\Configuration.fs"
 #load @"d:\repos\amg\RecadastroAMG.Logic\Types.fs"
 #load @"d:\repos\amg\RecadastroAMG.Logic\Validators.fs"
-#load @"d:\repos\amg\RecadastroAMG.Logic\Program.fs"
+#load @"d:\repos\amg\RecadastroAMG.Logic\Configuration.fs"

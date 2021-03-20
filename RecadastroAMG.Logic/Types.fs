@@ -87,20 +87,21 @@ type Estado =
   
 namespace Domain
 open System
-
 type RegistroAssociadoLegado = FSharp.Data.CsvProvider<"D:/repos/amg/associados.csv",";",0>
 type private String50 = string
+type Nome = String50
+type private CPF = String50
+type private CEP = String50
+type Logradouro = String50
 type private Email = string
 type CRM = int
 type private AnoFormatura = int
 type private DataNascimento = DateTime
 type private Telefone = string
 type Sexo = |Masculino |Feminino 
-type private CPF = string
-type private CEP = string
-type Logradouro = String50
 
-type Endereco = private {
+
+type Endereco =  {
                                 CEP:CEP;
                                 Logradouro:Logradouro;
                                 Numero:int option;
@@ -111,13 +112,13 @@ type Endereco = private {
                             }
 
   //verificar se o e-mail é requerido
-type Contato = private {
+type Contato =  {
                               TelefoneFixo:Telefone;
                               TelefoneMovel:Telefone;
                               Email:Email
                           }
 
-type PerrsonalInfo = private 
+type PerrsonalInfo =  
                               {
                                   CRM:CRM;
                                   AnoFormatura:AnoFormatura;
@@ -126,10 +127,11 @@ type PerrsonalInfo = private
                                   DataNascimento:DataNascimento;
                                   Sexo:Sexo
                               }
-type RegistroAssociado = private 
+type RegistroAssociado =  
                               {
-                                  Id:int;
+                                  //Id:int;
+                                  Nome:Nome
                                   PersonalInfo:PerrsonalInfo
                                   Contato:Contato
                                   Endereo:Endereco
-                              }
+                              } 
