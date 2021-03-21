@@ -43,6 +43,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.15.0, )",
+              "generatePathProperty": true
+            },
+            "AutoFixture.AutoMoq": {
+              "target": "Package",
+              "version": "[4.15.0, )",
+              "generatePathProperty": true
+            },
+            "AutoFixture.Xunit2": {
+              "target": "Package",
+              "version": "[4.15.0, )",
+              "generatePathProperty": true
+            },
             "FSharp.Core": {
               "target": "Package",
               "version": "[5.0.0, )",
@@ -51,6 +66,11 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )",
+              "generatePathProperty": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )",
               "generatePathProperty": true
             },
             "coverlet.collector": {

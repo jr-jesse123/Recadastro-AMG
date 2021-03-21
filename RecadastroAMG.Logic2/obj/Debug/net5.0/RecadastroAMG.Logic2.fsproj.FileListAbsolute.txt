@@ -5,3 +5,4 @@ D:\repos\amg\RecadastroAMG.Logic2\obj\Debug\net5.0\RecadastroAMG.Logic2.Assembly
 D:\repos\amg\RecadastroAMG.Logic2\obj\Debug\net5.0\RecadastroAMG.Logic2.AssemblyInfo.fs
 D:\repos\amg\RecadastroAMG.Logic2\obj\Debug\net5.0\RecadastroAMG.Logic2.dll
 D:\repos\amg\RecadastroAMG.Logic2\obj\Debug\net5.0\RecadastroAMG.Logic2.pdb
+D:\repos\amg\RecadastroAMG.Logic2\obj\Debug\net5.0\RecadastroAMG.Logic2.fsprojAssemblyReference.cache

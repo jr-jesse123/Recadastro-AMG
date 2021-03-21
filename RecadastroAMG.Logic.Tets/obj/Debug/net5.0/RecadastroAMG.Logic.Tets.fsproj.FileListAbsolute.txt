@@ -156,3 +156,9 @@ D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\net5.0\RecadastroAMG.Logic.Tets.
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\net5.0\RecadastroAMG.Logic.Tets.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\net5.0\RecadastroAMG.Logic.Tets.pdb
 D:\repos\amg\RecadastroAMG.Logic.Tets\obj\Debug\net5.0\RecadastroAMG.Logic.Tets.genruntimeconfig.cache
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\AutoFixture.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\AutoFixture.AutoMoq.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\AutoFixture.Xunit2.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Castle.Core.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Fare.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Moq.dll

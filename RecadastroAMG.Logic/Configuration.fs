@@ -43,19 +43,33 @@ module Repository=
     type BD = SqlDataProvider<Common.DatabaseProviderTypes.MSSQLSERVER,stringconn,UseOptionTypes = true>
     
 
-    let ``Novo registro`` (RegistroAssociado:RegistroAssociado) = 
+    let ``Adicioanr Registro ao contexto`` (RegistroAssociado:RegistroAssociado) = 
         
         let context = BD.GetDataContext()
         let novoRegistro = context.Dbo.DadosIniciais.Create()
-        novoRegistro.Nome <- "teste"
-            //RegistroAssociado.Contato.Email
-        //novoRegistro.Estado <- 2 // RegistroAssociado.Endereo.Estado 
-        //novoRegistro.Nome <- RegistroAssociado.PersonalInfo.nome
+        novoRegistro.Nome <- RegistroAssociado.PersonalInfo.Nome
+        novoRegistro.Crm <- RegistroAssociado.PersonalInfo.CRM
+        novoRegistro.AnoFormatura <- RegistroAssociado.PersonalInfo.AnoFormatura
+        novoRegistro.Especialidade <- int RegistroAssociado.PersonalInfo.Especialidade
+        novoRegistro.Cpf <- RegistroAssociado.PersonalInfo.CPF
+        novoRegistro.DataNascimento <- RegistroAssociado.PersonalInfo.DataNascimento
+        novoRegistro.Sexo <-  RegistroAssociado.PersonalInfo.Sexo |> Option.map int
         
-            
-        ()
-    
+        novoRegistro.Cep <- RegistroAssociado.Endereo.CEP
+        novoRegistro.Logradoutro <- RegistroAssociado.Endereo.Logradouro
+        novoRegistro.Complemento <- RegistroAssociado.Endereo.Complemento
+        novoRegistro.Bairro <- RegistroAssociado.Endereo.Bairro
+        novoRegistro.Cidade <- RegistroAssociado.Endereo.Cidade
+        novoRegistro.Estado <- int RegistroAssociado.Endereo.Estado
 
+
+        
+        novoRegistro.Email <- RegistroAssociado.Contato.Email
+        novoRegistro.Telefone1 <- RegistroAssociado.Contato.Telefone1
+        novoRegistro.Telefone2 <- RegistroAssociado.Contato.Telefone2
+
+        context.SubmitUpdates()
+    
 
 
 

@@ -21,11 +21,3 @@ type CepAbertoTests (outputHelper:ITestOutputHelper) =
           let result = cepClient.GetData "7191000" //n�emro propositalmente errado
           Assert.False result.Success
 
-
-type JsonProviderTests (outputHelper:ITestOutputHelper) =
-    [<Fact>]
-    let ``Configuração padrão é lida corretamente`` () =
-        //let teste  =  Config.Configuration.DefaultConfiguration
-        //outputHelper.WriteLine teste.CepAbertoKey
-        ()
-    

@@ -27,7 +27,11 @@
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
     <Pkgxunit Condition=" '$(Pkgxunit)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\xunit\2.4.1</Pkgxunit>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgMoq Condition=" '$(PkgMoq)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\moq\4.16.1</PkgMoq>
     <PkgMicrosoft_NET_Test_Sdk Condition=" '$(PkgMicrosoft_NET_Test_Sdk)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\microsoft.net.test.sdk\16.7.1</PkgMicrosoft_NET_Test_Sdk>
     <Pkgcoverlet_collector Condition=" '$(Pkgcoverlet_collector)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\coverlet.collector\1.3.0</Pkgcoverlet_collector>
+    <PkgAutoFixture Condition=" '$(PkgAutoFixture)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\autofixture\4.15.0</PkgAutoFixture>
+    <PkgAutoFixture_Xunit2 Condition=" '$(PkgAutoFixture_Xunit2)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\autofixture.xunit2\4.15.0</PkgAutoFixture_Xunit2>
+    <PkgAutoFixture_AutoMoq Condition=" '$(PkgAutoFixture_AutoMoq)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\autofixture.automoq\4.15.0</PkgAutoFixture_AutoMoq>
   </PropertyGroup>
 </Project>
