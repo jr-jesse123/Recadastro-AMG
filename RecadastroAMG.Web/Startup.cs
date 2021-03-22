@@ -38,12 +38,8 @@ namespace RecadastroAMG.Web
             //services.Add<CepValidator>(null);
 
             services.AddTransient<CEPModule.CepValidatorNet>(sp => CEPModule.CepValidatorNet.NewCepValidator(FuncConvert.FromFunc<string, bool>((x) => false))); ;
-
- 
-
-
-
-
+           
+            
 
             //var change = Microsoft.FSharp.Core.FuncConvert.FromFunc<string, string>((str) => "foda-se");
 
@@ -58,7 +54,7 @@ namespace RecadastroAMG.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func, CEPModule.CepValidatorNet validador)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func, CEPModule.CepValidatorNet validador, string teste)
         {
             var x = func.Invoke();
 

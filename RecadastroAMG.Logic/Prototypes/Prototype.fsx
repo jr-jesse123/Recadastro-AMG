@@ -7,12 +7,13 @@
 #r "nuget:CEPAberto"
 #load @"D:\repos\amg\RecadastroAMG.Logic\references.fsx"
 #load @"D:\repos\amg\RecadastroAMG.Logic\Types.fs"
+#load @"D:\repos\amg\RecadastroAMG.Logic\Configuration.fs"
 
 
 
 open Domain
 open Domain.CPF
 
-let cpr = CPF.Create "01724125109" 
+
 
         //Option.isSome cpr

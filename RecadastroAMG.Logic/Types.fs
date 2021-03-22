@@ -91,6 +91,8 @@ open System.ComponentModel.DataAnnotations
 
 
 type RegistroAssociadoLegado = FSharp.Data.CsvProvider<"D:/repos/amg/associados.csv",";",0>
+
+
 type private String50 = string
 type Nome = String50
 type private CPF = String50
@@ -103,6 +105,7 @@ type private DataNascimento = DateTime
 type private Telefone = string
 type Sexo = |Masculino = 1 |Feminino = 2
 
+//type EnderecoNaoValidado = {CEP:string;Logradouro:string;Numero:string;Complemento:string;Bairro:string;Cidade:string;Estado:string}
 
 type Endereco =  {
                                 CEP:CEP;
@@ -121,6 +124,7 @@ type Contato =  {
                               Email:Email
                           }
 
+//type PersonalInforNaoValidada = {Nome:string;CRM:string;CPF:string;}
 type PersonalInfo =  
                               {
                                   Nome:Nome;
@@ -228,6 +232,7 @@ module DataNascimento =
         | _ -> Error "data deve ser anterior à 2001 e posterior à 1901"
  
 [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]  
+[<AutoOpen>]
 module Telefone =
     let Create (unvalidatedTelefone:string) =
         let ``Adicionar Nono Digitos`` (telefoneSemCaracteresEspeciais:string) = 
@@ -236,8 +241,8 @@ module Telefone =
         let (|Fixo|``Celular com 8 digitos``| ``Celular com 9 digitos``|``Formato desconhecido``|) (input:string) =
             ``Remover Caracteres especiais`` unvalidatedTelefone
             |> function
-            | input when input.Length = 10 && input.[3] |> int >= 7 -> ``Celular com 8 digitos``
-            |  input when input.Length = 11 && input.[3] |> int = 9 -> ``Celular com 9 digitos``
+            | input when input.Length = 11 && input.[3] |> int >= 7 -> ``Celular com 8 digitos``
+            |  input when input.Length = 12 && input.[3] |> int = 9 -> ``Celular com 9 digitos``
             |  input when input.Length = 11 && input.[3] |> int < 7 -> ``Fixo``
             | _ -> ``Formato desconhecido``
 
