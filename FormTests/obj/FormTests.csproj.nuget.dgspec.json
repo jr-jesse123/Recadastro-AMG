@@ -1,0 +1,279 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\repos\\amg\\FormTests\\FormTests.csproj": {}
+  },
+  "projects": {
+    "D:\\repos\\amg\\FormTests\\FormTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\amg\\FormTests\\FormTests.csproj",
+        "projectName": "FormTests",
+        "projectPath": "D:\\repos\\amg\\FormTests\\FormTests.csproj",
+        "packagesPath": "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\amg\\FormTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JESSE JUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\repos\\amg\\RecadastroAMG.Web\\RecadastroAMG.Web.csproj": {
+                "projectPath": "D:\\repos\\amg\\RecadastroAMG.Web\\RecadastroAMG.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "bunit.web": {
+              "target": "Package",
+              "version": "[1.0.0-preview-01, )"
+            },
+            "bunit.xunit": {
+              "target": "Package",
+              "version": "[1.0.0-preview-01, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj",
+        "projectName": "RecadastroAMG.Logic",
+        "projectPath": "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj",
+        "packagesPath": "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\amg\\RecadastroAMG.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JESSE JUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CEPAberto": {
+              "target": "Package",
+              "version": "[2.0.12, )",
+              "generatePathProperty": true
+            },
+            "Cpf": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Data": {
+              "target": "Package",
+              "version": "[4.0.1, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Data.JsonProvider": {
+              "target": "Package",
+              "version": "[0.5.0, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Data.SqlClient": {
+              "target": "Package",
+              "version": "[2.0.7, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )",
+              "generatePathProperty": true
+            },
+            "SQLProvider": {
+              "target": "Package",
+              "version": "[1.2.1, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repos\\amg\\RecadastroAMG.Web\\RecadastroAMG.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\amg\\RecadastroAMG.Web\\RecadastroAMG.Web.csproj",
+        "projectName": "RecadastroAMG.Web",
+        "projectPath": "D:\\repos\\amg\\RecadastroAMG.Web\\RecadastroAMG.Web.csproj",
+        "packagesPath": "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\amg\\RecadastroAMG.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JESSE JUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj": {
+                "projectPath": "D:\\repos\\amg\\RecadastroAMG.Logic\\RecadastroAMG.Logic.fsproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

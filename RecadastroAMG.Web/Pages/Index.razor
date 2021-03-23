@@ -1,42 +1,11 @@
 ﻿@page "/"
 
+<ForComponent>
 
-<div class="container">
-    <Alerta NomeParaSaudacao="José Rodrigues"></Alerta>
-    <CrmHeader NomeCompletoMedico="José Rodrigues" CRM="7787"></CrmHeader>
-
-    <EditForm class="row g-3" EditContext="Context" OnValidSubmit="HandleInvalidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
-        <InfoPessoalContainer Context="context" />
-        <ContatoContainer Context="context" />
-        <EnderecoContainer Context="context" />
-
-        <button type="submit" class="btn mt-5 btn-lg btn-primary">Confirmar Alterações</button>
-        <button type="submit" class="btn mt-5 btn-lg btn-success">As informações Estão Corretas!</button>
-    </EditForm>
-
-</div>
+</ForComponent>
 
 @code   {
 
 
-
-    private void HandleValidSubmit(EditContext context)
-    {
-        //displayValidationErrorMessages = false;
-        //displayUserAddedToDB = true;
-    }
-    private void HandleInvalidSubmit(EditContext context)
-    {
-        //displayValidationErrorMessages = true;
-        //displayUserAddedToDB = false;
-    }
-
-    NovoRegistroInputDto model = new NovoRegistroInputDto();
-    EditContext Context;
-    protected override void OnInitialized()
-    {
-        Context = new EditContext(model);
-        base.OnInitialized();
-    }
 
 }
