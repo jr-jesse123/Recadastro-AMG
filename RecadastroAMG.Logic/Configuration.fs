@@ -4,16 +4,26 @@ open Microsoft.Extensions.DependencyInjection
 open Domain
 open System
 
-[<CompiledName("conversao")>]
-type conversao = string -> int
-type conversao2 = string -> int
+
+
+type Iapelido<'apelido> = 
+    abstract Mtd:'apelido
+
+    
+
+type conversao = Conversao of(string -> int) with interface Iapelido<string -> int> with member t.Mtd = let (Conversao x) = t in x 
+
+
+type conversao2 = Conversao2 of(string -> int) with interface Iapelido<string -> int> with member t.Mtd = let (Conversao x) = t in x 
+//type conversao2 = Conversao2 of (string -> int)
 
 
 
 module implementation =
+    
     let cepvalidatorImplementation = fun (x:string) -> 3
-    let teste:conversao = fun x -> 3 
-    let teste2:conversao2 = fun x -> 4 
+    let teste:conversao = Conversao (fun x -> 3 )
+    let teste2:conversao2 = Conversao2 (fun x -> 4 )
     
     
     //let x (z:FSharp.Core.FSharpFunc<string,int>) = FSharp.Core.FSharpFunc.ToConverter(fun x-> x).
@@ -23,15 +33,19 @@ module ConfigExtension =
         member this.AddDefaultValidators1 (cepVAlidatorKey:string option) =
             
             this.AddTransient<conversao>(Func<IServiceProvider,conversao>(fun sp -> implementation.teste)) |> ignore
-            this.AddTransient<conversao2>(Func<IServiceProvider,conversao>(fun sp -> implementation.teste2)) |> ignore
+            this.AddTransient<conversao2>(Func<IServiceProvider,conversao2>(fun sp -> implementation.teste2)) |> ignore
 
 
             this.AddTransient<string>(fun sp ->
                 let teste = sp.GetRequiredService<conversao>()
                 let teste2 = sp.GetRequiredService<conversao2>()
 
-                let result = teste("ha")
-                let restul2 = teste2("ye")
+                let (Conversao x) =  teste
+
+                let result = x("u")
+
+                let (Conversao2 y) =  teste2
+                let result2 = y("u")
 
 
                 "fumo") |> ignore
