@@ -1,144 +1,42 @@
 ﻿@page "/"
-@using RecadastroAMG.Web.Shared.formulario
-@using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais
 
 
 <div class="container">
-    <Alerta NomeParaSaudacao="José Rodrigues" ></Alerta>
+    <Alerta NomeParaSaudacao="José Rodrigues"></Alerta>
     <CrmHeader NomeCompletoMedico="José Rodrigues" CRM="7787"></CrmHeader>
-    
 
-    <form class="row g-3">
-        <InfoPessoalContainer></InfoPessoalContainer>
-        
+    <EditForm class="row g-3" EditContext="Context" OnValidSubmit="HandleInvalidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+        <InfoPessoalContainer Context="context" />
+        <ContatoContainer Context="context" />
+        <EnderecoContainer Context="context" />
 
-
-        <div class="card my-3">
-            <div class="m-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                     class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
-                </svg>
-                <h5 class="card-title  d-inline">Informações Pessoais:</h5>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6 col-lg-2">
-                        <label for="inputEmail4" class="form-label">CPF:</label>
-                        <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="form-label">Data de Nascimento:</div>
-                        <input type="date" class="form-control" id="inlineFormInputGroupUsername" required>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <label for="inputAddress2" class="form-label">Ano de Formatura: </label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="2020">2020</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-6 col-lg-2">
-                        <label for="inputAddress2" class="form-label">Especialidade:</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="">Acupuntura</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <label for="inputAddress2" class="form-label">Sexo:</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="0">Escolha</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="card my-3">
-            <div class="m-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                     class="bi bi-telephone-plus" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                    <path fill-rule="evenodd"
-                          d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z" />
-                </svg>
-                <h5 class="card-title  d-inline">Informações de Contato:</h5>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <label for="inputAddress2" class="form-label">Telefone Fixo:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="(62) 5555-5555" required>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <label for="inputAddress2" class="form-label">Telefone Celular</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="(62) 9 9999-9999" required>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <label for="inputEmail4" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="contato@exemplo.com.br" required>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card my-3">
-
-            <div class="m-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house"
-                     viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                          d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                    <path fill-rule="evenodd"
-                          d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                </svg>
-                <h5 class="card-title  d-inline">Endereço:</h5>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <label for="inputAddress2" class="form-label">CEP:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="71000-000" required>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <label for="inputAddress2" class="form-label">Cidade:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="ex: Goiânia" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="inputCity" class="form-label">Estado:</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="">GO</option>
-                        </select>
-                    </div>
-                    <div class="col-md-7">
-                        <label for="inputAddress2" class="form-label">Logradouro:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Logradouro" required>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="inputAddress2" class="form-label">Número:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder=" ex: S/N ou 20" required>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="inputAddress2" class="form-label">Bairro:</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Centro" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputAddress2" class="form-label">Complemento:</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="ex: próximo ao shopping" required>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <button type="submit" class="btn mt-5 btn-lg btn-primary">Confirmar Alterações</button>
         <button type="submit" class="btn mt-5 btn-lg btn-success">As informações Estão Corretas!</button>
-    </form>
+    </EditForm>
+
 </div>
+
+@code   {
+
+
+
+    private void HandleValidSubmit(EditContext context)
+    {
+        //displayValidationErrorMessages = false;
+        //displayUserAddedToDB = true;
+    }
+    private void HandleInvalidSubmit(EditContext context)
+    {
+        //displayValidationErrorMessages = true;
+        //displayUserAddedToDB = false;
+    }
+
+    NovoRegistroInputDto model = new NovoRegistroInputDto();
+    EditContext Context;
+    protected override void OnInitialized()
+    {
+        Context = new EditContext(model);
+        base.OnInitialized();
+    }
+
+}

@@ -79,6 +79,27 @@ using RecadastroAMG.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

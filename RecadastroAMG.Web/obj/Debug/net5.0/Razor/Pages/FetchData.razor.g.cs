@@ -80,6 +80,27 @@ using RecadastroAMG.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\repos\amg\RecadastroAMG.Web\Pages\FetchData.razor"
 using RecadastroAMG.Web.Data;
 

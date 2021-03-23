@@ -82,6 +82,27 @@ using RecadastroAMG.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class ContainerTitle : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,10 +111,12 @@ using RecadastroAMG.Web.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\InformacoesPessoais\ContainerTitle.razor"
+#line 13 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\InformacoesPessoais\ContainerTitle.razor"
            
         [Parameter] public string Titulo { get; set; }
-        [Parameter] public string[] PathImage { get; set; }
+        [Parameter] public RenderFragment PathsFragment { get; set; }
+        [Parameter] public string classe { get; set; }
+
     
 
 #line default

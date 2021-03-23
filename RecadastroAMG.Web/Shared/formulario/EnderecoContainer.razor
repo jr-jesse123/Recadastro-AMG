@@ -1,0 +1,46 @@
+﻿@inherits ContainerBase
+    <CardComponent>
+        <TitleFragment>
+            <ContainerTitle Titulo="Informaões de Endereço:">
+                <PathsFragment>
+                    <path fill-rule="evenodd"
+                          d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                          d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </PathsFragment>
+            </ContainerTitle>
+        </TitleFragment>
+        <BodyFragment>
+            <VerticalLabel classe="col-md-6 col-lg-3" idDoAlvo="cep" labelText="CEP:">
+                <InputText @bind-Value="Model.Endereco.CEP" class="form-control" id="cep" placeholder="71000-000" required />
+            </VerticalLabel>
+
+            <VerticalLabel classe="col-md-6 col-lg-3" idDoAlvo="cidade" labelText="Cidade:">
+                <InputText @bind-Value="Model.Endereco.Cidade" class="form-control" id="cidade" placeholder="ex: Goiânia" required />
+            </VerticalLabel>
+
+
+            <VerticalLabel classe="col-sm-2" idDoAlvo="estado" labelText="Estado:">
+                <InputSelect @bind-Value="Model.Endereco.Estado" class="form-select" required>
+                    <option value="">GO</option>
+                </InputSelect>
+            </VerticalLabel>
+
+            <VerticalLabel classe="col-md-7" idDoAlvo="logradouro" labelText="Logradouro:">
+                <InputText @bind-Value="Model.Endereco.Logradouro" class="form-control" id="logradouro" placeholder="Logradouro" required />
+            </VerticalLabel>
+
+            <VerticalLabel classe="col-md-3" idDoAlvo="numero" labelText="Número:">
+                <InputText @bind-Value="Model.Endereco.Numero" class="form-control" id="numero" placeholder="ex: S/N ou 20" />
+            </VerticalLabel>
+
+            
+            <VerticalLabel classe="col-md-4" idDoAlvo="bairro" labelText="Bairro:">
+                <InputText @bind-Value="Model.Endereco.Bairro" class="form-control" id="bairro" placeholder="ex: Centro" />
+            </VerticalLabel>
+
+            <VerticalLabel classe="col-md-6" idDoAlvo="complemento" labelText="Complemento:">
+                <InputText @bind-Value="Model.Endereco.Complemento" class="form-control" id="complemento" placeholder="ex: próximo ao shopping" />
+            </VerticalLabel>
+        </BodyFragment>
+    </CardComponent>

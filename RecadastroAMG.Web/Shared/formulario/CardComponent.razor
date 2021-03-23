@@ -1,0 +1,20 @@
+﻿
+
+<div class="card my-3">
+    <div class="m-3">
+        @TitleFragment
+    </div>
+    <div class="card-body">
+        <div class="row">
+            @BodyFragment
+        </div>
+    </div>
+</div>
+
+@code {
+    /// <summary>
+    /// container Title
+    /// </summary>
+    [Parameter] public RenderFragment TitleFragment { get; set; }
+    [Parameter] public RenderFragment BodyFragment { get; set; }
+}

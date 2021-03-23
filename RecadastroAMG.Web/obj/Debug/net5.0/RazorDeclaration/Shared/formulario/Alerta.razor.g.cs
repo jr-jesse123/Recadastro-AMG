@@ -82,6 +82,27 @@ using RecadastroAMG.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Alerta : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

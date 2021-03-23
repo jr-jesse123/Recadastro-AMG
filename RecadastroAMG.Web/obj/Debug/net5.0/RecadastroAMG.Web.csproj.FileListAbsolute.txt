@@ -98,3 +98,11 @@ D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formular
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\InformacoesPessoais\InfoPessoalContainer.razor.g.cs
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formulario\InformacoesPessoais\ContainerTitle.razor.g.cs
 D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\InformacoesPessoais\ContainerTitle.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formulario\InformacoesPessoais\VerticalLabel.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\InformacoesPessoais\VerticalLabel.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formulario\ContatoContainer.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\ContatoContainer.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formulario\CardComponent.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\CardComponent.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\RazorDeclaration\Shared\formulario\EnderecoContainer.razor.g.cs
+D:\repos\amg\RecadastroAMG.Web\obj\Debug\net5.0\Razor\Shared\formulario\EnderecoContainer.razor.g.cs

@@ -83,44 +83,33 @@ using RecadastroAMG.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\InformacoesPessoais\InfoPessoalContainer.razor"
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\InformacoesPessoais\InfoPessoalContainer.razor"
 using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class InfoPessoalContainer : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class InfoPessoalContainer : ContainerBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 50 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\InformacoesPessoais\InfoPessoalContainer.razor"
-       
-    public class MyClass
-    {
-        public string oi;
-    }
-
-    MyClass oi = new MyClass();
-
-    EditForm referencia;
-    EditContext EditContext;
-
-    protected override void OnInitialized()
-    {
-        EditContext = new EditContext(oi);
-        base.OnInitialized();
-    }
-
-
-    private string[] desenhoInfopessoal = new string[] { "M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z", "M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" };
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -83,15 +83,22 @@ using RecadastroAMG.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+#line 11 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using RecadastroAMG.Web.Shared.formulario;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+#line 12 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
 using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\repos\amg\RecadastroAMG.Web\_Imports.razor"
+using RecadastroAMG.Web.Data.Models;
 
 #line default
 #line hidden
@@ -104,6 +111,35 @@ using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 19 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+         
+
+
+
+    private void HandleValidSubmit(EditContext context)
+    {
+        //displayValidationErrorMessages = false;
+        //displayUserAddedToDB = true;
+    }
+    private void HandleInvalidSubmit(EditContext context)
+    {
+        //displayValidationErrorMessages = true;
+        //displayUserAddedToDB = false;
+    }
+
+    NovoRegistroInputDto model = new NovoRegistroInputDto();
+    EditContext Context;
+    protected override void OnInitialized()
+    {
+        Context = new EditContext(model);
+        base.OnInitialized();
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

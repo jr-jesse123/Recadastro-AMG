@@ -1,69 +1,46 @@
-﻿@using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais
+﻿@inherits ContainerBase
+@using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais
 
-<div class="card my-3">
-    <div class="m-3">
-        <ContainerTitle PathImage="@desenhoInfopessoal" Titulo="Informações Pessoais" />
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-6 col-lg-2">
-                <label for="inputEmail4" class="form-label">CPF:</label>
+<CardComponent>
+    <TitleFragment>
+        <ContainerTitle Titulo="Informações Pessoais" classe="bi bi-file-earmark-person">
+            <PathsFragment>
+                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
+            </PathsFragment>
+        </ContainerTitle>
+    </TitleFragment>
+    <BodyFragment>
+        <VerticalLabel labelText="CPF:" idDoAlvo="cpf" classe="col-md-6 col-lg-2">
+            <InputText @bind-Value="Model.personalInfo.CPF" class="form-control" id="cpf" placeholder="Digite seu CPF" required />
+        </VerticalLabel>
 
+        <VerticalLabel labelText="Data de Nascimento:" idDoAlvo="dtNascimento" classe="col-md-6 col-lg-2">
+            <InputDate @bind-Value="Model.personalInfo.DataNascimento"
+                       class="form-control" id="dtNascimento" placeholder="Digite seu CPF" required />
+        </VerticalLabel>
 
-                <EditForm EditContext="EditContext">
-                    <InputText @bind-Value="oi.oi"></InputText>
-                </EditForm>
-         
-
-                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
-            </div>
-            <div class="col-md-6 col-lg-2">
-                <div class="form-label">Data de Nascimento:</div>
-                <input type="date" class="form-control" id="inlineFormInputGroupUsername" required>
-            </div>
-            <div class="col-md-6 col-lg-2">
-                <label for="inputAddress2" class="form-label">Ano de Formatura: </label>
-                <select class="form-select" aria-label="Default select example">
-                    <option value="2020">2020</option>
-                </select>
-            </div>
-
-            <div class="col-md-6 col-lg-2">
-                <label for="inputAddress2" class="form-label">Especialidade:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option value="">Acupuntura</option>
-                </select>
-            </div>
-            <div class="col-md-6 col-lg-2">
-                <label for="inputAddress2" class="form-label">Sexo:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option value="0">Escolha</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Feminino</option>
-                </select>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-@code {
-    public class MyClass
-    {
-        public string oi;
-    }
-
-    MyClass oi = new MyClass();
-
-    EditForm referencia;
-    EditContext EditContext;
-
-    protected override void OnInitialized()
-    {
-        EditContext = new EditContext(oi);
-        base.OnInitialized();
-    }
+        <VerticalLabel classe="col-md-6 col-lg-2" labelText="Ano de Formatura:" idDoAlvo="anoFormatura">
+            <InputSelect class="form-select" id="anoFormatura" @bind-Value="Model.personalInfo.AnoFormatura">
+                <option value="">Select classification ...</option>
+                <option value="Exploration">2000</option>
+                <option value="Diplomacy">Diplomacy</option>
+                <option value="Defense">Defense</option>
+            </InputSelect>
+        </VerticalLabel>
 
 
-    private string[] desenhoInfopessoal = new string[] { "M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z", "M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" };
-}
+        <VerticalLabel classe="col-md-6 col-lg-2" labelText="Especialidade" idDoAlvo="Especialidade">
+            <InputSelect id="Especialidade" class="form-select" @bind-Value="Model.personalInfo.Especialidade">
+                <option>Acumputura</option>
+            </InputSelect>
+        </VerticalLabel>
+
+        <VerticalLabel classe="col-md-6 col-lg-2" labelText="Sexo" idDoAlvo="sexo">
+            <InputSelect class="form-select" id="sexo" @bind-Value="Model.personalInfo.Sexo">
+                <option>masc</option>
+            </InputSelect>
+        </VerticalLabel>
+    </BodyFragment>
+</CardComponent>
+
