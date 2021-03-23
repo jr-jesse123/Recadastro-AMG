@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jfmcYzEVMtG24S4z7cnUa0w66icmTMfI1OSmT/EzrkStQOmD9a9bFocxFpJfPlB1ZwiGzHzs5IzmU5jncQQUYw==",
+  "success": true,
+  "projectFilePath": "D:\\repos\\amg\\RecadastroAMG.Web2\\RecadastroAMG.Web2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

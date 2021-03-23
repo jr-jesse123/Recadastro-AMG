@@ -1,35 +1,17 @@
-@page "/"
+ï»¿@page "/"
+@using RecadastroAMG.Web.Shared.formulario
+@using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais
 
 
 <div class="container">
-
-    <div class="alert alert-primary" role="alert">
-        <p>
-            Prezado Sr. José Rodrigues!
-        </p>
-        <p class="text-justify">
-            Visando as boas práticas de privacidade e gestão de dados nos princípios da nova LGPD - Lei Geral de Proteção de
-            Dados -
-            Estamos atualizando os dos nossos associados. <br>
-            Por Favor Gostaria que verificasse os dados abaixo e corrigisse qualquer informação que se encontre
-            desatualizada.
-        </p>
-
-        <p>
-            <b>
-                Nossa Equipe de comunicação entrará em contato em breve para confirmar o processo e esclarecer possíveis
-                dúvidas
-            </b>
-        </p>
-    </div>
-    <div class="card mt-4">
-        <div class="card-header text-center">
-            <h1>Médico José Rodriggues Fernandes</h1>
-            <h2 class="text-muted">CRM: 7782</h2>
-        </div>
-    </div>
+    <Alerta NomeParaSaudacao="JosÃ© Rodrigues" ></Alerta>
+    <CrmHeader NomeCompletoMedico="JosÃ© Rodrigues" CRM="7787"></CrmHeader>
+    
 
     <form class="row g-3">
+        <InfoPessoalContainer></InfoPessoalContainer>
+        
+
 
         <div class="card my-3">
             <div class="m-3">
@@ -38,7 +20,7 @@
                     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                     <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
                 </svg>
-                <h5 class="card-title  d-inline">Informações Pessoais:</h5>
+                <h5 class="card-title  d-inline">InformaÃ§Ãµes Pessoais:</h5>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -84,7 +66,7 @@
                     <path fill-rule="evenodd"
                           d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z" />
                 </svg>
-                <h5 class="card-title  d-inline">Informações de Contato:</h5>
+                <h5 class="card-title  d-inline">InformaÃ§Ãµes de Contato:</h5>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -115,7 +97,7 @@
                     <path fill-rule="evenodd"
                           d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                 </svg>
-                <h5 class="card-title  d-inline">Endereço:</h5>
+                <h5 class="card-title  d-inline">EndereÃ§o:</h5>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -125,7 +107,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <label for="inputAddress2" class="form-label">Cidade:</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="ex: Goiânia" required>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="ex: GoiÃ¢nia" required>
                     </div>
                     <div class="col-sm-2">
                         <label for="inputCity" class="form-label">Estado:</label>
@@ -139,7 +121,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <label for="inputAddress2" class="form-label">Número:</label>
+                        <label for="inputAddress2" class="form-label">NÃºmero:</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder=" ex: S/N ou 20" required>
                     </div>
                     <div class="row">
@@ -149,14 +131,14 @@
                         </div>
                         <div class="col-md-6">
                             <label for="inputAddress2" class="form-label">Complemento:</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="ex: próximo ao shopping" required>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="ex: prÃ³ximo ao shopping" required>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <button type="submit" class="btn mt-5 btn-lg btn-primary">Confirmar Alterações</button>
-        <button type="submit" class="btn mt-5 btn-lg btn-success">As informações Estão Corretas!</button>
+        <button type="submit" class="btn mt-5 btn-lg btn-primary">Confirmar AlteraÃ§Ãµes</button>
+        <button type="submit" class="btn mt-5 btn-lg btn-success">As informaÃ§Ãµes EstÃ£o Corretas!</button>
     </form>
 </div>

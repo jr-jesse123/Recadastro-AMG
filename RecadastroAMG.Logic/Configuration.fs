@@ -14,7 +14,7 @@ type Iapelido<'apelido> =
 type conversao = Conversao of(string -> int) with interface Iapelido<string -> int> with member t.Mtd = let (Conversao x) = t in x 
 
 
-type conversao2 = Conversao2 of(string -> int) with interface Iapelido<string -> int> with member t.Mtd = let (Conversao x) = t in x 
+type conversao2 = Conversao2 of(string -> int) with interface Iapelido<string -> int> with member t.Mtd = let (Conversao2 x) = t in x 
 //type conversao2 = Conversao2 of (string -> int)
 
 

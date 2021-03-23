@@ -82,6 +82,20 @@ using RecadastroAMG.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+using RecadastroAMG.Web.Shared.formulario;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+using RecadastroAMG.Web.Shared.formulario.InformacoesPessoais;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

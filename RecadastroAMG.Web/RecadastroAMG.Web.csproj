@@ -10,6 +10,18 @@
 
   <ItemGroup>
     <None Include="SiteCadastro\Cadastroindex.razor" />
+    <None Include="wwwroot\css\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\css\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\css\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\css\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\css\js\bootstrap.esm.js" />
+    <None Include="wwwroot\css\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\css\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\css\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\css\js\bootstrap.js" />
+    <None Include="wwwroot\css\js\bootstrap.js.map" />
+    <None Include="wwwroot\css\js\bootstrap.min.js" />
+    <None Include="wwwroot\css\js\bootstrap.min.js.map" />
   </ItemGroup>
 
   <ItemGroup>
