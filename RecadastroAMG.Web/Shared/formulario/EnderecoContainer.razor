@@ -12,35 +12,46 @@
         </TitleFragment>
         <BodyFragment>
             <VerticalLabel classe="col-md-6 col-lg-3" idDoAlvo="cep" labelText="CEP:">
-                <InputText @bind-Value="Model.Endereco.CEP" class="form-control" id="cep" placeholder="71000-000" required />
+                <InputText @bind-Value="Model.CEP" class="form-control" id="cep" placeholder="71000-000" required />
+                <ValidationMessage For="() => Model.CEP" />
             </VerticalLabel>
 
             <VerticalLabel classe="col-md-6 col-lg-3" idDoAlvo="cidade" labelText="Cidade:">
-                <InputText @bind-Value="Model.Endereco.Cidade" class="form-control" id="cidade" placeholder="ex: Goiânia" required />
+                <InputText @bind-Value="Model.Cidade" class="form-control" id="cidade" placeholder="ex: Goiânia" required />
+                <ValidationMessage For="() => Model.Cidade" />
             </VerticalLabel>
 
 
             <VerticalLabel classe="col-sm-2" idDoAlvo="estado" labelText="Estado:">
-                <InputSelect @bind-Value="Model.Endereco.Estado" class="form-select" required>
-                    <option value="">GO</option>
+                <InputSelect @bind-Value="Model.Estado" class="form-select" required>
+                    <option disabled selected>Escolha</option>
+                    @foreach (var item in Enum.GetNames(typeof(Enums.Estado)))
+                    {
+                        <option value="@item">@item</option>
+                    }
                 </InputSelect>
+                <ValidationMessage For="() => Model.Estado" />
             </VerticalLabel>
 
             <VerticalLabel classe="col-md-7" idDoAlvo="logradouro" labelText="Logradouro:">
-                <InputText @bind-Value="Model.Endereco.Logradouro" class="form-control" id="logradouro" placeholder="Logradouro" required />
+                <InputText @bind-Value="Model.Logradouro" class="form-control" id="logradouro" placeholder="Logradouro" required />
+                <ValidationMessage For="() => Model.Logradouro" />
             </VerticalLabel>
 
             <VerticalLabel classe="col-md-3" idDoAlvo="numero" labelText="Número:">
-                <InputText @bind-Value="Model.Endereco.Numero" class="form-control" id="numero" placeholder="ex: S/N ou 20" />
+                <InputText @bind-Value="Model.Numero" class="form-control" id="numero" placeholder="ex: S/N ou 20" />
+                <ValidationMessage For="() => Model.Numero" />
             </VerticalLabel>
 
             
             <VerticalLabel classe="col-md-4" idDoAlvo="bairro" labelText="Bairro:">
-                <InputText @bind-Value="Model.Endereco.Bairro" class="form-control" id="bairro" placeholder="ex: Centro" />
+                <InputText @bind-Value="Model.Bairro" class="form-control" id="bairro" placeholder="ex: Centro" />
+                <ValidationMessage For="() => Model.Bairro" />
             </VerticalLabel>
 
             <VerticalLabel classe="col-md-6" idDoAlvo="complemento" labelText="Complemento:">
-                <InputText @bind-Value="Model.Endereco.Complemento" class="form-control" id="complemento" placeholder="ex: próximo ao shopping" />
+                <InputText @bind-Value="Model.Complemento" class="form-control" id="complemento" placeholder="ex: próximo ao shopping" />
+                <ValidationMessage For="() => Model.Complemento" />
             </VerticalLabel>
         </BodyFragment>
     </CardComponent>

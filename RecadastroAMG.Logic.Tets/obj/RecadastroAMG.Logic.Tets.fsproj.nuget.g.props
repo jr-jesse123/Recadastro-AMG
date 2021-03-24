@@ -29,6 +29,7 @@
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
     <PkgMoq Condition=" '$(PkgMoq)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\moq\4.16.1</PkgMoq>
     <PkgMicrosoft_NET_Test_Sdk Condition=" '$(PkgMicrosoft_NET_Test_Sdk)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\microsoft.net.test.sdk\16.7.1</PkgMicrosoft_NET_Test_Sdk>
+    <PkgFsCheck_Xunit Condition=" '$(PkgFsCheck_Xunit)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\fscheck.xunit\2.15.1</PkgFsCheck_Xunit>
     <Pkgcoverlet_collector Condition=" '$(Pkgcoverlet_collector)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\coverlet.collector\1.3.0</Pkgcoverlet_collector>
     <PkgAutoFixture Condition=" '$(PkgAutoFixture)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\autofixture\4.15.0</PkgAutoFixture>
     <PkgAutoFixture_Xunit2 Condition=" '$(PkgAutoFixture_Xunit2)' == '' ">C:\Users\JESSE JUNIOR\.nuget\packages\autofixture.xunit2\4.15.0</PkgAutoFixture_Xunit2>

@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{5EE9DA99
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RecadastroAMG.Logic.Tets", "RecadastroAMG.Logic.Tets\RecadastroAMG.Logic.Tets.fsproj", "{1C1F5562-E03C-4EB4-9BD8-E72DD3108BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTests", "FormTests\FormTests.csproj", "{59AE6C82-A1C7-44D4-B926-A1030304C716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormTests", "FormTests\FormTests.csproj", "{59AE6C82-A1C7-44D4-B926-A1030304C716}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,15 +12,18 @@
     </TitleFragment>
     <BodyFragment>
         <VerticalLabel classe="col-lg-2 col-md-6" idDoAlvo="telefone1" labelText="Telefone Principal:">
-            <InputText @bind-Value="Model.Contato.Telefone1" class="form-control" id="telefone1" placeholder="(62) 99999-9999" required></InputText>
+            <InputText @bind-Value="Model.Telefone1" class="form-control" id="telefone1" placeholder="(62) 99999-9999" required></InputText>
+            <ValidationMessage For="() => Model.Telefone1" />
         </VerticalLabel>
 
         <VerticalLabel classe="col-lg-2 col-md-6" idDoAlvo="Telefoen2" labelText="Telefone Secundário:">
-            <InputText @bind-Value="Model.Contato.Telefone2" class="form-control" id="telefone2" placeholder="(62) 5555-5555"></InputText>
+            <InputText @bind-Value="Model.Telefone2" class="form-control" id="telefone2" placeholder="(62) 5555-5555"></InputText>
+            <ValidationMessage For="() => Model.Telefone2" />
         </VerticalLabel>
 
         <VerticalLabel classe="col-lg-6 col-md-12" idDoAlvo="email" labelText="Email:">
-            <InputText @bind-Value="Model.Contato.Telefone1" class="form-control" id="inputAddress2" placeholder="contato@exemplo.com.br" required></InputText>
+            <InputText @bind-Value="Model.Email" class="form-control" id="inputAddress2" placeholder="contato@exemplo.com.br" required></InputText>
+            <ValidationMessage  For="() => Model.Email"/>
         </VerticalLabel>
     </BodyFragment>
 </CardComponent>

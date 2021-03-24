@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4RMWHWnm5lCzR1QoVC4F6D41BunVpQMI8yBCVBhweBbf7dTesnR/PotAKH9IZn5UzYGGHRzJbZgH64s+Ytok6Q==",
+  "dgSpecHash": "u80dihsR11wdfWvSWdNxJC0WMpg8r4EvK0fb0D6oDQ2eMp8vn9we4soeeBRPnVMkSOdQq6n9/MPWnCbohpNh6Q==",
   "success": true,
   "projectFilePath": "D:\\repos\\amg\\RecadastroAMG.Logic.Tets\\RecadastroAMG.Logic.Tets.fsproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\cpf\\2.1.0\\cpf.2.1.0.nupkg.sha512",
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fare\\2.1.1\\fare.2.1.1.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fscheck\\2.15.1\\fscheck.2.15.1.nupkg.sha512",
+    "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fscheck.xunit\\2.15.1\\fscheck.xunit.2.15.1.nupkg.sha512",
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fsharp.data\\4.0.1\\fsharp.data.4.0.1.nupkg.sha512",
     "C:\\Users\\JESSE JUNIOR\\.nuget\\packages\\fsharp.data.jsonprovider\\0.5.0\\fsharp.data.jsonprovider.0.5.0.nupkg.sha512",

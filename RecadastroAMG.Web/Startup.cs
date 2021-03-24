@@ -31,36 +31,12 @@ namespace RecadastroAMG.Web
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<Func<int>>(() => 1);
-            //services.AddTransient<Config.CepValidator>(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string,bool>((str) => true)));
-            //services.AddTransient(provider => CepValidator.NewCepValidator(FuncConvert.FromFunc<string, bool>((str) => true)));
-
-            services.AddDefaultValidators("");
-            //services.Add<CepValidator>(null);
-
-            services.AddTransient<CEPModule.CepValidatorNet>(sp => CEPModule.CepValidatorNet.NewCepValidator(FuncConvert.FromFunc<string, bool>((x) => false))); ;
-           
-            
-
-            //var change = Microsoft.FSharp.Core.FuncConvert.FromFunc<string, string>((str) => "foda-se");
-
-            //var teste = Domain.Iteste4.NewVish(change);
-
-            //var teste2 = Domain.Iteste3.NewVish("");
-
-
-            //aqui nós podemos registar uma classe ou uma função com as depencencias resolvidas.
-            //d e forma que ao ser solicitada a função base ela seja entre  resolvida.\\\\\\
-            //services.AddSingleton<>
+            services.AddDbContext<AMGContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Func<int> func, CEPModule.CepValidatorNet validador, string teste)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IConfiguration teste)
         {
-            var x = func.Invoke();
-
-            var y = validador;
-
-            var z = validador.Item.Invoke("");
             
 
 

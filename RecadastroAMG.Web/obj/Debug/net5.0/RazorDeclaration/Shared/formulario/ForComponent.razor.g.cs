@@ -110,6 +110,78 @@ using RecadastroAMG.Web.Data.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 24 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\ForComponent.razor"
+       
+
+    bool Modified = false;
+    
+
+
+
+    [Parameter] public NovoRegistroInputDto model { get; set; } = new NovoRegistroInputDto();
+    [Inject] NavigationManager nm { get; set; }
+    [Inject] AMGContext BDContext { get; set; }
+    private void HandleValidSubmit(EditContext context)
+    {
+
+        DadosNormalizado dadosNormalizado = new DadosNormalizado()
+        {
+            AnoFormatura = model.AnoFormatura,
+            Bairro = model.Bairro,
+            Cep = model.CEP,
+            Cidade = model.Cidade,
+            Cpf = model.CPF,
+            Complemento = model.Complemento,
+            Crm = model.CRM,
+            Email = model.Email,
+            DataNascimento = model.DataNascimento,
+            Estado =  Convert.ToInt32(model.Estado),
+            Especialidade = Convert.ToInt32(model.Especialidade),
+            Logradoutro = model.Logradouro,
+            Nome = model.Nome,
+            Sexo = model.Sexo.HasValue ? Convert.ToInt32(model.Sexo) : null,
+            Telefone1 = model.Telefone1,
+            Telefone2 = model.Telefone2
+        };
+
+
+        BDContext.DadosNormalizados.Add(dadosNormalizado);
+        BDContext.SaveChanges();
+
+
+        nm.NavigateTo("/sucesso");
+        //displayValidationErrorMessages = false;
+        //displayUserAddedToDB = true;
+    }
+
+
+
+
+    EditContext Context;
+    protected override Task OnParametersSetAsync()
+    {
+        Context.OnFieldChanged += (sender, args) =>
+        {
+            Modified = true;
+            StateHasChanged();
+        };
+
+        return base.OnParametersSetAsync();
+    }
+
+    protected override void OnInitialized()
+    {
+
+
+
+        Context = new EditContext(model);
+        base.OnInitialized();
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -12,33 +12,42 @@
     </TitleFragment>
     <BodyFragment>
         <VerticalLabel labelText="CPF:" idDoAlvo="cpf" classe="col-md-6 col-lg-2">
-            <InputText @bind-Value="Model.personalInfo.CPF" class="form-control" id="cpf" placeholder="Digite seu CPF" required />
+            <InputText @bind-Value="Model.CPF" class="form-control" id="cpf" placeholder="Digite seu CPF" required />
+            <ValidationMessage For="() => Model.CPF"/>
         </VerticalLabel>
 
         <VerticalLabel labelText="Data de Nascimento:" idDoAlvo="dtNascimento" classe="col-md-6 col-lg-2">
-            <InputDate @bind-Value="Model.personalInfo.DataNascimento"
+            <InputDate @bind-Value="Model.DataNascimento"
                        class="form-control" id="dtNascimento" placeholder="Digite seu CPF" required />
+            <ValidationMessage For="() => Model.DataNascimento" />
         </VerticalLabel>
 
         <VerticalLabel classe="col-md-6 col-lg-2" labelText="Ano de Formatura:" idDoAlvo="anoFormatura">
-            <InputSelect class="form-select" id="anoFormatura" @bind-Value="Model.personalInfo.AnoFormatura">
-                <option value="">Select classification ...</option>
-                <option value="Exploration">2000</option>
-                <option value="Diplomacy">Diplomacy</option>
-                <option value="Defense">Defense</option>
-            </InputSelect>
+            <InputNumber class="form-control" @bind-Value="Model.AnoFormatura" id="anoFormatura1" />
+            <ValidationMessage For="() => Model.AnoFormatura" />
         </VerticalLabel>
 
 
         <VerticalLabel classe="col-md-6 col-lg-2" labelText="Especialidade" idDoAlvo="Especialidade">
-            <InputSelect id="Especialidade" class="form-select" @bind-Value="Model.personalInfo.Especialidade">
-                <option>Acumputura</option>
+            <InputSelect id="Especialidade" class="form-select" @bind-Value="Model.Especialidade">
+                <option selected disabled>Escolha</option>
+                @foreach (var item in Enum.GetNames(typeof(Enums.Especialidade)))
+                {
+                    <option value="@item">@item</option>
+                }
             </InputSelect>
+            <ValidationMessage For="() => Model.Especialidade" />
         </VerticalLabel>
 
         <VerticalLabel classe="col-md-6 col-lg-2" labelText="Sexo" idDoAlvo="sexo">
-            <InputSelect class="form-select" id="sexo" @bind-Value="Model.personalInfo.Sexo">
-                <option>masc</option>
+            <InputSelect class="form-select" id="sexo" @bind-Value="Model.Sexo">
+                <option selected disabled>Escolha</option>
+                @foreach (var item in Enum.GetNames(typeof(Domain.Sexo)))
+                {
+                    <option value="@item">@item</option>
+                }
+                <option value="">Não Desejo Informar</option>
+                <ValidationMessage For="() => Model.Sexo" />
             </InputSelect>
         </VerticalLabel>
     </BodyFragment>

@@ -162,3 +162,5 @@ D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\AutoFixture.Xunit2.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Castle.Core.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Fare.dll
 D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\Moq.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\FsCheck.dll
+D:\repos\amg\RecadastroAMG.Logic.Tets\bin\Debug\net5.0\FsCheck.Xunit.dll

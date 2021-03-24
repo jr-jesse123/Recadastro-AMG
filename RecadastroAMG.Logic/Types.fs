@@ -275,6 +275,18 @@ module CEP =
         let (CepValidator wer) = validator
         if  wer unvalidatedCep then Ok cep else Error "Cep Invalido"
 
+[<AutoOpen>]
+module CRM = 
+    let getHash (crm:int) = 
+        crm + 36 |> (*) 20
+        
+        
+    let GetCRM (hash:int) =
+          hash  / 20 |> (-) 36 |> (*) -1
+
+
+      
+  
 
 
   //TODO: DEFINIR QUAIS OS CAMPOS SÃO OPCIONAIS AQUI DO ENDEREÇO E CONFIRMAR QUE SOMENTE UM ENDEREÇO É POSSÍVEL OU NECESSÁRIO

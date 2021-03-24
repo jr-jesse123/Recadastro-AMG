@@ -102,6 +102,31 @@
           "lib/netstandard1.1/Fare.dll": {}
         }
       },
+      "FsCheck/2.15.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.2.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/FsCheck.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FsCheck.dll": {}
+        }
+      },
+      "FsCheck.Xunit/2.15.1": {
+        "type": "package",
+        "dependencies": {
+          "FsCheck": "[2.15.1]",
+          "xunit.extensibility.execution": "[2.2.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/FsCheck.Xunit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FsCheck.Xunit.dll": {}
+        }
+      },
       "FSharp.Core/5.0.0": {
         "type": "package",
         "compile": {
@@ -2721,6 +2746,42 @@
         "lib/net35/Fare.xml",
         "lib/netstandard1.1/Fare.dll",
         "lib/netstandard1.1/Fare.xml"
+      ]
+    },
+    "FsCheck/2.15.1": {
+      "sha512": "xdYByBfqdEpQ7LV1j2+I9JF534BxDPfJsrE6XqF6WLMgWWP6DlLMI03uYTZMc7vF/Z8wy/LVzNijXDHlr6X8iw==",
+      "type": "package",
+      "path": "fscheck/2.15.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fscheck.2.15.1.nupkg.sha512",
+        "fscheck.nuspec",
+        "lib/net452/FsCheck.dll",
+        "lib/net452/FsCheck.xml",
+        "lib/netstandard1.0/FsCheck.dll",
+        "lib/netstandard1.0/FsCheck.xml",
+        "lib/netstandard1.6/FsCheck.dll",
+        "lib/netstandard1.6/FsCheck.xml",
+        "lib/netstandard2.0/FsCheck.dll",
+        "lib/netstandard2.0/FsCheck.xml"
+      ]
+    },
+    "FsCheck.Xunit/2.15.1": {
+      "sha512": "GXAGNZaA+N3vIdWmdPUjHvRGgJS+sbHgRY0zRWi8riR6NFvSGmNetCqKcLfXVpfodba03A0q+IaIC1Ndo8ulWg==",
+      "type": "package",
+      "path": "fscheck.xunit/2.15.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fscheck.xunit.2.15.1.nupkg.sha512",
+        "fscheck.xunit.nuspec",
+        "lib/net452/FsCheck.Xunit.dll",
+        "lib/net452/FsCheck.Xunit.xml",
+        "lib/netstandard1.6/FsCheck.Xunit.dll",
+        "lib/netstandard1.6/FsCheck.Xunit.xml",
+        "lib/netstandard2.0/FsCheck.Xunit.dll",
+        "lib/netstandard2.0/FsCheck.Xunit.xml"
       ]
     },
     "FSharp.Core/5.0.0": {
@@ -8143,6 +8204,7 @@
       "AutoFixture.AutoMoq >= 4.15.0",
       "AutoFixture.Xunit2 >= 4.15.0",
       "FSharp.Core >= 5.0.0",
+      "FsCheck.Xunit >= 2.15.1",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.1",
       "RecadastroAMG.Logic >= 1.0.0",
@@ -8212,6 +8274,11 @@
           "FSharp.Core": {
             "target": "Package",
             "version": "[5.0.0, )",
+            "generatePathProperty": true
+          },
+          "FsCheck.Xunit": {
+            "target": "Package",
+            "version": "[2.15.1, )",
             "generatePathProperty": true
           },
           "Microsoft.NET.Test.Sdk": {

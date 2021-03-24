@@ -111,7 +111,7 @@ using RecadastroAMG.Web.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\ContatoContainer.razor"
+#line 32 "D:\repos\amg\RecadastroAMG.Web\Shared\formulario\ContatoContainer.razor"
        
 
     NovoRegistroInputDto Model { get; set; }

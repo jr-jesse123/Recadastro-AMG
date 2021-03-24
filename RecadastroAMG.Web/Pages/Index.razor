@@ -1,11 +1,69 @@
-﻿@page "/"
+﻿@using Microsoft.Extensions.Configuration
+@page "/{CRMHash:int}"
 
-<ForComponent>
+
+<ForComponent model="model">
 
 </ForComponent>
 
+
+
+
 @code   {
+    NovoRegistroInputDto model { get; set; }
+
+    ForComponent formulario { get; set; }
+
+    [Parameter] public int CRMHash { get; set; }
+    [Inject] public AMGContext context { get; set; }
+
+    protected override Task OnParametersSetAsync()
+    {
+        var crm = CRMHash.ToString();
+
+        var registro = context.DadosIniciais.Where(d => d.Crm.Contains(crm)).Single();
+
+        DateTime nascimento;
+        try
+        {
+            var parts = registro.DataNascimento.Split("/").Select(p => Convert.ToInt32(p)).ToArray();
+            nascimento = new DateTime(parts[0], parts[1], parts[2]);
+
+        }
+        catch (Exception)
+        {
+
+            nascimento = new DateTime(2000, 01, 01);
+        }
 
 
+        model = new NovoRegistroInputDto()
+        {
+            Email = registro.Email,
+            Telefone1 = registro.Telefone1,
+            Telefone2 = registro.Telefone2,
+            Bairro = registro.Bairro,
+            CEP = registro.Cep,
+            Cidade = registro.Cidade,
+            Complemento = registro.Complemento,
+            Estado = (Enums.Estado)Enum.Parse(typeof(Enums.Estado), registro.Estado)
+            ,
+            Logradouro = registro.Logradoutro,
+
+            AnoFormatura = string.IsNullOrWhiteSpace(registro.AnoFormatura) ? 2000 : Convert.ToInt32(registro.AnoFormatura),
+            CPF = registro.Cpf,
+            CRM = Convert.ToInt32(registro.Crm),
+            DataNascimento = nascimento,
+            Nome = registro.Nome
+
+        };
+
+        return base.OnParametersSetAsync();
+    }
 
 }
+
+}
+
+
+

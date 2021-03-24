@@ -103,7 +103,14 @@ using RecadastroAMG.Web.Data.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+#nullable restore
+#line 1 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+using Microsoft.Extensions.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/{CRMHash:int}")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -112,28 +119,57 @@ using RecadastroAMG.Web.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
+#line 12 "D:\repos\amg\RecadastroAMG.Web\Pages\Index.razor"
          
+    NovoRegistroInputDto model { get; set; }
 
+    ForComponent formulario { get; set; }
 
+    [Parameter] public int CRMHash { get; set; }
+    [Inject] public AMGContext context { get; set; }
 
-    private void HandleValidSubmit(EditContext context)
+    protected override Task OnParametersSetAsync()
     {
-        //displayValidationErrorMessages = false;
-        //displayUserAddedToDB = true;
-    }
-    private void HandleInvalidSubmit(EditContext context)
-    {
-        //displayValidationErrorMessages = true;
-        //displayUserAddedToDB = false;
-    }
+        var crm = CRMHash.ToString();
 
-    NovoRegistroInputDto model = new NovoRegistroInputDto();
-    EditContext Context;
-    protected override void OnInitialized()
-    {
-        Context = new EditContext(model);
-        base.OnInitialized();
+        var registro = context.DadosIniciais.Where(d => d.Crm.Contains(crm)).Single();
+
+        DateTime nascimento;
+        try
+        {
+            var parts = registro.DataNascimento.Split("/").Select(p => Convert.ToInt32(p)).ToArray();
+            nascimento = new DateTime(parts[0], parts[1], parts[2]);
+
+        }
+        catch (Exception)
+        {
+
+            nascimento = new DateTime(2000, 01, 01);
+        }
+
+
+        model = new NovoRegistroInputDto()
+        {
+            Email = registro.Email,
+            Telefone1 = registro.Telefone1,
+            Telefone2 = registro.Telefone2,
+            Bairro = registro.Bairro,
+            CEP = registro.Cep,
+            Cidade = registro.Cidade,
+            Complemento = registro.Complemento,
+            Estado = (Enums.Estado)Enum.Parse(typeof(Enums.Estado), registro.Estado)
+            ,
+            Logradouro = registro.Logradoutro,
+
+            AnoFormatura = string.IsNullOrWhiteSpace(registro.AnoFormatura) ? 2000 : Convert.ToInt32(registro.AnoFormatura),
+            CPF = registro.Cpf,
+            CRM = Convert.ToInt32(registro.Crm),
+            DataNascimento = nascimento,
+            Nome = registro.Nome
+
+        };
+
+        return base.OnParametersSetAsync();
     }
 
 
