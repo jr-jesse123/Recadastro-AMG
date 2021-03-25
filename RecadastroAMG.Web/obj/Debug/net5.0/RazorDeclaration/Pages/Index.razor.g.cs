@@ -144,7 +144,7 @@ using Microsoft.Extensions.Configuration;
         catch (Exception)
         {
 
-            nascimento = new DateTime(2000, 01, 01);
+            nascimento = new DateTime();
         }
 
         model = new NovoRegistroInputDto()
