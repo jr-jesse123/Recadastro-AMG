@@ -18,8 +18,6 @@ namespace RecadastroAMG.Web
             Configuration = configuration;
         }
 
-        
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -30,16 +28,13 @@ namespace RecadastroAMG.Web
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-            services.AddSingleton<Func<int>>(() => 1);
+            
             services.AddDbContext<AMGContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IConfiguration teste)
         {
-            
-
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -77,19 +77,35 @@ module Repository=
     [<Literal>] let stringconn = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=AMG;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
     [<Literal>] let FindByCRMCommand = "select * from DadosIniciais WHERE CONVERT(VARCHAR, crm) =  @CRM"
 
-    [<Literal>] let updateCRMHashCommand = "UPDATE  DadosIniciais SET CRMHASH = 'TESTE' WHERE (CONVERT(nvarchar,CRM) = @crm)"
+    [<Literal>] let updateCRMHashCommand = "UPDATE  DadosIniciais SET CRMHASH = @hash WHERE (CONVERT(nvarchar,CRM) = @crm)"
     type CrmHashUpdater = FSharp.Data.SqlCommandProvider<updateCRMHashCommand,stringconn>
-    let UpdateCRMHash crm = 
-        use cmd = new CrmHashUpdater(stringconn)
-        cmd.Execute crm 
-
-
-    type BDReader = FSharp.Data.SqlCommandProvider<FindByCRMCommand,stringconn>
-    //let GetByCRMSerialized = BDReader(stringconn).Execute >> Seq.head >> Newtonsoft.Json.JsonConvert.SerializeObject
-    type BDWritter = SqlDataProvider<Common.DatabaseProviderTypes.MSSQLSERVER,stringconn,UseOptionTypes = true>
-    let Context = BDWritter.GetDataContext()
     
-    //let teste = 
-    //    Context.
+    [<Literal>] let GetAllQuery = "SELECT * FROM DadosIniciais"
+    type GetAll = FSharp.Data.SqlCommandProvider<GetAllQuery,stringconn>
+    //type 
+
+
+
+    let UpdateCRMHash (cmd:CrmHashUpdater) crm = 
+        //use cmd = new CrmHashUpdater(stringconn)
+        let hash = getHash crm
+        cmd.Execute (string hash, string crm)
         
-   
+
+    type BDFinder = FSharp.Data.SqlCommandProvider<FindByCRMCommand,stringconn>
+    
+    type BDWritter = SqlDataProvider<Common.DatabaseProviderTypes.MSSQLSERVER,stringconn,UseOptionTypes = true>
+    //let Context = BDWritter.GetDataContext()
+    
+    let updateAllHashs () =
+        use cmd = new CrmHashUpdater(stringconn)       
+        use cmdGetter = new GetAll(stringconn)
+        let allRegistros = cmdGetter.Execute() |> Seq.toArray
+        for registro in allRegistros do
+            let result = UpdateCRMHash cmd (int registro.crm.Value)
+            printfn "%i" result
+                
+                
+        
+            
+            

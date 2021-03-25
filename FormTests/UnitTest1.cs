@@ -3,15 +3,18 @@ using System;
 using Xunit;
 using Bunit;
 using Index = RecadastroAMG.Web.Pages.Index;
+using RecadastroAMG.Web;
 
 namespace FormTests
 {
     public class UnitTest1
     {
         [Fact]
-        public void Acesso_Ao_Banco_De_Dados_Com_Secrect_String()
+        public void TesteSomenteNumeros()
         {
+            var sit = "3df2adfe5";
 
+            Assert.Equal( "325", sit.SomenteNumeros());
         }
 
         [Fact]

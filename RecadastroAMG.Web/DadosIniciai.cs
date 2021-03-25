@@ -21,5 +21,6 @@ namespace RecadastroAMG.Web
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public string Crmhash { get; set; }
     }
 }

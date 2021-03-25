@@ -39,15 +39,8 @@ type CepAbertoTests (outputHelper:ITestOutputHelper) =
           
           Assert.Equal(crm, 1)
 
-        
+    
     //[<Fact>]
-    //let ``Registro inicial é recuperado pelo crm ``()=
-    //    //let result = Config.Repository.GetByCRMSerialized "11831"
-        
-        
-
-    //    //for x in result do
-    //    //    Xunit.Assert.Equal("ADRIANO MARQUES DA SILVA",x.nome.Value)
-            
-
+    //let ``crm hash é atualizado corretamente`` () =
+    //    Config.Repository.updateAllHashs ()
         

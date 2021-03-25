@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace RecadastroAMG.Web
 {
-    
     public partial class DadosIniciais2
     {
         public string Nome { get; set; }

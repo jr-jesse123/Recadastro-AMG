@@ -19,9 +19,9 @@
 
     protected override Task OnParametersSetAsync()
     {
-        var crm = CRMHash.ToString();
+        var crm = Domain.CRMModule.GetCRM(CRMHash);
 
-        var registro = context.DadosIniciais.Where(d => d.Crm.Contains(crm)).Single();
+        var registro = context.DadosIniciais.Where(d => d.Crm == crm.ToString()).Single();
 
         DateTime nascimento;
         try
@@ -33,9 +33,8 @@
         catch (Exception)
         {
 
-            nascimento = new DateTime(2000, 01, 01);
+            nascimento = new DateTime();
         }
-
 
         model = new NovoRegistroInputDto()
         {

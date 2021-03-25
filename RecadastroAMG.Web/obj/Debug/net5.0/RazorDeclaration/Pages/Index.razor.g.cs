@@ -130,9 +130,9 @@ using Microsoft.Extensions.Configuration;
 
     protected override Task OnParametersSetAsync()
     {
-        var crm = CRMHash.ToString();
+        var crm = Domain.CRMModule.GetCRM(CRMHash);
 
-        var registro = context.DadosIniciais.Where(d => d.Crm.Contains(crm)).Single();
+        var registro = context.DadosIniciais.Where(d => d.Crm == crm.ToString()).Single();
 
         DateTime nascimento;
         try
@@ -146,7 +146,6 @@ using Microsoft.Extensions.Configuration;
 
             nascimento = new DateTime(2000, 01, 01);
         }
-
 
         model = new NovoRegistroInputDto()
         {

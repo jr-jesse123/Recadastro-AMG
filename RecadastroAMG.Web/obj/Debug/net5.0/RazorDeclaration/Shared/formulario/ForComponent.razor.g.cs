@@ -115,9 +115,6 @@ using RecadastroAMG.Web.Data.Models;
        
 
     bool Modified = false;
-    
-
-
 
     [Parameter] public NovoRegistroInputDto model { get; set; } = new NovoRegistroInputDto();
     [Inject] NavigationManager nm { get; set; }
@@ -145,14 +142,18 @@ using RecadastroAMG.Web.Data.Models;
             Telefone2 = model.Telefone2
         };
 
-
-        BDContext.DadosNormalizados.Add(dadosNormalizado);
-        BDContext.SaveChanges();
-
+        try
+        {
+            BDContext.DadosNormalizados.Add(dadosNormalizado);
+            BDContext.SaveChanges();
+        }
+        catch (Exception)
+        {
+            BDContext.DadosNormalizados.Update(dadosNormalizado);
+            BDContext.SaveChanges();
+        }
 
         nm.NavigateTo("/sucesso");
-        //displayValidationErrorMessages = false;
-        //displayUserAddedToDB = true;
     }
 
 

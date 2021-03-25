@@ -25,7 +25,7 @@ namespace RecadastroAMG.Web
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AMG;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
@@ -63,7 +63,14 @@ namespace RecadastroAMG.Web
                     .HasColumnName("cpf");
 
                 entity.Property(e => e.Crm)
+                    .HasMaxLength(200)
+                    .IsUnicode(false)
                     .HasColumnName("crm");
+
+                entity.Property(e => e.Crmhash)
+                    .HasMaxLength(200)
+                    .IsUnicode(false)
+                    .HasColumnName("CRMHASH");
 
                 entity.Property(e => e.DataNascimento)
                     .HasColumnType("text")
@@ -155,7 +162,12 @@ namespace RecadastroAMG.Web
 
             modelBuilder.Entity<DadosNormalizado>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Crm)
+                    .HasName("PK__DadosNor__D836F7D07E7C6053");
+
+                entity.Property(e => e.Crm)
+                    .ValueGeneratedNever()
+                    .HasColumnName("crm");
 
                 entity.Property(e => e.AnoFormatura).HasColumnName("anoFormatura");
 
@@ -188,8 +200,6 @@ namespace RecadastroAMG.Web
                     .IsUnicode(false)
                     .HasColumnName("cpf");
 
-                entity.Property(e => e.Crm).HasColumnName("crm");
-
                 entity.Property(e => e.DataNascimento)
                     .HasColumnType("datetime")
                     .HasColumnName("dataNascimento");
@@ -213,6 +223,11 @@ namespace RecadastroAMG.Web
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("nome");
+
+                entity.Property(e => e.Numero)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("numero");
 
                 entity.Property(e => e.Sexo).HasColumnName("sexo");
 
