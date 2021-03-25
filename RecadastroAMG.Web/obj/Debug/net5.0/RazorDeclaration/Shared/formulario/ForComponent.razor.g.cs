@@ -133,7 +133,7 @@ using RecadastroAMG.Web.Data.Models;
             Crm = model.CRM,
             Email = model.Email,
             DataNascimento = model.DataNascimento,
-            Estado =  Convert.ToInt32(model.Estado),
+            Estado = Convert.ToInt32(model.Estado),
             Especialidade = Convert.ToInt32(model.Especialidade),
             Logradoutro = model.Logradouro,
             Nome = model.Nome,
@@ -155,9 +155,6 @@ using RecadastroAMG.Web.Data.Models;
 
         nm.NavigateTo("/sucesso");
     }
-
-
-
 
     EditContext Context;
     protected override Task OnParametersSetAsync()

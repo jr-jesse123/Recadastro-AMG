@@ -29,6 +29,7 @@ namespace RecadastroAMG.Web
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             
+            
             services.AddDbContext<AMGContext>();
         }
 

@@ -1,0 +1,88 @@
+﻿<div class="container">
+    <Alerta NomeParaSaudacao="@model.Nome"></Alerta>
+    <CrmHeader NomeCompletoMedico="@model.Nome" CRM="@model.CRM"></CrmHeader>
+
+    <EditForm class="row g-3" EditContext="Context" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary />
+        <InfoPessoalContainer Context="context" />
+        <ContatoContainer Context="context" />
+        <EnderecoContainer Context="context" />
+
+        @if (Modified)
+        {
+            <button type="submit" class="btn mt-5 btn-lg btn-primary">Confirmar Alterações</button>
+        }
+        else
+        {
+            <button type="submit" class="btn mt-5 btn-lg btn-success">Enviar Atualização</button>
+        }
+
+    </EditForm>
+
+</div>
+@code {
+
+    bool Modified = false;
+
+    [Parameter] public NovoRegistroInputDto model { get; set; } = new NovoRegistroInputDto();
+    [Inject] NavigationManager nm { get; set; }
+    [Inject] AMGContext BDContext { get; set; }
+    private void HandleValidSubmit(EditContext context)
+    {
+
+        DadosNormalizado dadosNormalizado = new DadosNormalizado()
+        {
+            AnoFormatura = model.AnoFormatura,
+            Bairro = model.Bairro,
+            Cep = model.CEP,
+            Cidade = model.Cidade,
+            Cpf = model.CPF,
+            Complemento = model.Complemento,
+            Crm = model.CRM,
+            Email = model.Email,
+            DataNascimento = model.DataNascimento,
+            Estado = Convert.ToInt32(model.Estado),
+            Especialidade = Convert.ToInt32(model.Especialidade),
+            Logradoutro = model.Logradouro,
+            Nome = model.Nome,
+            Sexo = model.Sexo.HasValue ? Convert.ToInt32(model.Sexo) : null,
+            Telefone1 = model.Telefone1,
+            Telefone2 = model.Telefone2
+        };
+
+        try
+        {
+            BDContext.DadosNormalizados.Add(dadosNormalizado);
+            BDContext.SaveChanges();
+        }
+        catch (Exception)
+        {
+            BDContext.DadosNormalizados.Update(dadosNormalizado);
+            BDContext.SaveChanges();
+        }
+
+        nm.NavigateTo("/sucesso");
+    }
+
+    EditContext Context;
+    protected override Task OnParametersSetAsync()
+    {
+        Context.OnFieldChanged += (sender, args) =>
+        {
+            Modified = true;
+            StateHasChanged();
+        };
+
+        return base.OnParametersSetAsync();
+    }
+
+    protected override void OnInitialized()
+    {
+
+
+
+        Context = new EditContext(model);
+        base.OnInitialized();
+    }
+}
